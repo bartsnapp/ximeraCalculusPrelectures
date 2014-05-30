@@ -16,13 +16,59 @@
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  This activity will motivate the need for limits in mathematics.
 \end{abstract}
-
 \maketitle
 
+Sometimes we have functions that are not defined at certain
+points. For example, consider
+\[
+f(x) = \frac{x^2 - 3x + 2}{x-2}.
+\]
+You may be tempted to divide by $x^2 - 3x + 2$ by $x-2$, and conclude
+that our function is equal to $x-1$. However this is not true!
+\[
+f(x) = x-1 \qquad\text{only when $x\ne 2$,}
+\]
+the function $f(x)$ is \textbf{undefined} when $x= 2$, since if we
+attempt to compute $f(2)$ we find
+\[
+f(2) = \frac{2^2-3\cdot 2+2}{2-2} = \frac{0}{0}\qquad\text{which is  undefined}.
+\]
+There are other types of functions that are undefined at given points. 
+
 \begin{question}
-  What is the correct answer to this question?
+  Below we have a collection of functions and points. Which
+  function(s) is/are defined at the given point?
+\begin{solution}
+\begin{multiple-choice}
+\choice[correct]{$f(x) = \sqrt{x}$ at $x= 0$}
+\choice{$f(x) = \frac{1}{x}$ at $x= 0$}
+\choice{$f(x) = \ln(x)$ at $x=0$}
+\choice{$f(x) = \sin^{-1}(x)$ at $x=2$}
+\end{multiple-choice}
+\end{solution}
+\end{question}
+
+
+\begin{question}
+A graph question
+\end{question}
+
+
+
+
+Limits also appear in real world settings. You've known how to compute
+average velocity for some time, it is just
+\[
+\text{average velocity} = \frac{\text{distance}}{\text{time}}.
+\]
+However, we are typically more interested in velocity at a specific
+instant. This is called \textit{instantaneous velocity}.
+
+\begin{question}
+  Give a plot and ask about average velocities of smaller and smaller
+  settings. Maybe driving from Columbus OH to Myrtle Beach SC. 
 
   \begin{solution}
     \begin{multiple-choice}
@@ -36,6 +82,7 @@
 
 What other questions do you have about this lecture?
 \begin{free-response}
+Answers will vary.
 \end{free-response}
 
 \end{document}
