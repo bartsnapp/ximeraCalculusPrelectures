@@ -37,50 +37,8 @@ instant. This is called \textit{instantaneous velocity}.
   %% Not  sure. 
   Give a plot and ask about average velocities of smaller and smaller
   settings. Maybe driving from Columbus OH to Myrtle Beach SC. 
-  \begin{image}
-    \begin{tikzpicture}
-        \begin{axis}[
-            xmin=0,
-            xmax=12,
-            ymin=0,
-            ymax=600,
-            width=5in,
-            axis lines=middle,
-            y label style={at={(axis description cs:-0.1,0.5)},rotate=90,anchor=south},
-            x label style={at={(axis description cs:0.5,-0.1)}},
-            xlabel=time, ylabel=distance,
-            xtick={0,1,...,12},
-            xticklabels={7am,8am,9am,10am,11am,12pm,1pm,2pm,3pm,4pm,5pm,6pm,7pm},
-            ytick={0,50,...,600},
-            grid=both,
-            grid style={dashed, gridColor},
-          ]
-	  \addplot [very thick, red] coordinates {
-            (0,0)
-            (1,25)
-            (2,150)
-            (5,275)
-            (6,275)
-            (10,550)
-            (10.5,525)
-            (11,550)
-            (12,600)
-          };
-	  \addplot [penColor] coordinates {
-            (0,0)
-            (.9,20)
-            (1.1,30)
-            (2,150)
-            (5,275)
-            (6,275)
-            (10,550)
-            (10.5,525)
-            (11,550)
-            (12,600)
-          };
-        \end{axis}
-    \end{tikzpicture}
-  \end{image}
+
+  % Removed picture which was breaking the pandoc filter
 
   \begin{solution}
     \begin{multiple-choice}
