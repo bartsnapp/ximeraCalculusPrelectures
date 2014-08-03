@@ -30,20 +30,6 @@ we write
 all we mean is that the value of $f(x)$ gets as close as we want to
 $L$ when $x$ gets larger and larger. 
 
-
-\begin{question}
-What does the
-\[
-x\to \infty
-\]
-mean?
-\begin{multipleChoice}
-\choice[correct]{$x$ becomes larger and larger.}
-\choice{$x = \infty$.}
-\choice{$x$ becomes every number at once.}
-\end{multipleChoice}
-\end{question}
-
 While the phrase ``at infinity'' might seem mystical or far-fetched,
 it is actually very practical. Let's see if we can convince you of
 this. Recently I started living with a puppy:
@@ -60,7 +46,19 @@ this puppy's growth is modeled by:
 h(t) = \frac{45 e^{4.33 t}}{12+3 e^{4.33 t}}
 \]
 
-Now if I want to know the puppy's adult height
+This gives the ``height'' of the puppy after $t$ years. For dogs, the
+height of the dog is the ``shoulder height'' the measurement of how
+far the shoulder of the dog is from the floor when the dog is
+standing.
+
+If I want to know the puppy's adult height I would have several
+options. Perhaps the most obvious thing to do is plug in an ``adult''
+age and see what the formula gives. However, to do this, I would need
+a calculator.
+
+Can I somehow figure out dog's adult height using the formula
+\emph{without} using a calculator? Here is where limits at infinity
+come into play.
 
 
 \begin{question}
@@ -76,60 +74,58 @@ mean?
 \end{multipleChoice}
 \end{question}
 
-
-Believe it or not, limits at infinity are usually a way to
-\textit{simplify} something that is complex.
-
-maybe rolling cylinder
-Dog growing
-relativistic speeds
+Consider our equation for the puppy's height:
 
 
-Let me tell you about \textit{Project Excelsior}. \textit{Project
-  Excelsior}
-
-\href{http://en.wikipedia.org/wiki/Project_Excelsior}{Hello}
-
-was initiated in 1958 to study high altitude ejection systems. The plan
-was this: Joe Kittinger would ride a balloon up to an extreme altitude
-(31333 meters) and then jump from the balloon's gondola. Here is a
-video: 
-
-%\href{https://www.youtube.com/watch?v=fM39Z3grkpg}
-
-
-The first 
-Kittinger held the world record for high altitude jumps until 2012,
-when Felix Baumgartner jumped from a balloon at an altitude of 38969
-meters as part of the \textit{Red Bull Stratos} project.
-
-After 
-
-
-TERMINAL VELOCITY!
-
-
-Penny from skyscraper. (don't think this will work)
-
-%http://www.scientificamerican.com/article/could-a-penny-dropped-off/
-
-bass guitar string
-
-%https://www.youtube.com/watch?v=hvl3ZCIzEK0
+\[
+h(t) = \frac{45 e^{4.33 t}}{12+3 e^{4.33 t}}
+\]
 
 \begin{question}
-  What is the correct answer to this question?
+Which of the following are equivalent to 
 
-  \begin{solution}
-    \begin{multiple-choice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multiple-choice}  
-  \end{solution}
+\[
+h(t) = \frac{45 e^{4.33 t}}{12+3 e^{4.33 t}}?
+\]
+
+\begin{multipleChoice}
+\choice[correct]{$\frac{45}{12e^{-4.33t}+3}$}
+\choice{$\frac{45 e^{4.33 t}}{12}\cdot \frac{45e^{4.33t}}{3 e^{4.33 t}}$}
+\choice{$\frac{45 e^{4.33 t}}{12}+\frac{45e^{4.33t}}{3 e^{4.33 t}}$}
+\end{multipleChoice}
 \end{question}
 
+\begin{question}
+As $x\to \infty$ what happens to $e^{-4.33t}$?
+\begin{multipleChoice}
+\choice[correct]{$e^{-4.33t}$ approaches zero.}
+\choice{$e^{-4.33t}$ approaches one.}
+\choice{$e^{-4.33t}$ approaches infinity.}
+\choice{$e^{-4.33t}$ approaches negative infinity.}
+\choice{$e^{-4.33t}$ approaches $4.33$.}
+\choice{$e^{-4.33t}$ approaches $-4.33$.}
+\end{multipleChoice}
+\end{question}
+
+
+\begin{question}
+What is 
+\[
+\lim_{x\to\infty} h(t)?
+\]
+\begin{multipleChoice}
+\choice[correct]{$15$}
+\choice{$3.75$}
+\choice{$3$}
+\choice{Infinity.}
+\choice{Zero.}
+\choice{Negative infinity.}
+\end{multipleChoice}
+\end{question}
+
+Part of learning calculus is about understanding and knowing
+functions. Limits at infinity help us ``remove'' irrelevant data and
+easily gain information from complex formulas.
 
 \begin{question}
 What other questions do you have about this lecture?
