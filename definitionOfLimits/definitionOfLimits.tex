@@ -65,42 +65,44 @@ There are other types of functions that are undefined at given points.
 \end{question}
 
 
-\begin{question} Abstract graphing question
+Continuing on with the example of 
+
+\[
+f(x) = \frac{x^2 - 3x + 2}{x-2},
+\]
+
+let's see a plot of this function:
+
 \begin{image}
 \begin{tikzpicture}
   \colorlet{penColor}{blue!50!black} % Color of a curve in a plot
 \colorlet{gridColor}{gray!50} % Color of grid in a plot
 \colorlet{background}{white} % Color of the page
 	\begin{axis}[
-           xmin=-4, xmax=6, ymin=-3, ymax=10,    
-           unit vector ratio*=1 1 1,
-           axis lines=middle, 
-           width=10in,
-           xlabel=$x$, ylabel=$y$,
-           y label style={at=(current axis.above origin),anchor=south},
-           x label style={at=(current axis.right of origin),anchor=west},
-           xtick={-4,...,6}, ytick={-3,...,10},
-           xticklabels={-4,,-2,,0,,2,,4,,6}, yticklabels={,-2,,0,,2,,4,,6,,8,,10},
-           grid=major,
-           grid style={dashed, gridColor},
-         ]
-	  \addplot [very thick, penColor, smooth, domain=(-4:-2)] {6};
-	  \addplot [very thick, penColor, smooth, domain=(-2:0)] {x^2-2};
-         \addplot [very thick, penColor, smooth, domain=(0:2)] {(x-1)^3+3*(x-1)+3};
-         \addplot [very thick, penColor, smooth, domain=(2:6)] {(x-4)^3+8};
-         \addplot[color=penColor,fill=white,only marks,mark=*] coordinates{(-2,6)};  %% open hole
-         \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(-2,2)};  %% open hole
-         \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(0,-2)};  %% open hole
-         \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(0,-1)};  %% open hole
-         \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(2,0)};  %% open hole
-         \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-2,8)};  %% closed hole
-         \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(0,-1.5)};  %% closed hole
-         \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(2,7)};  %% closed hole
-       \end{axis}
+            domain=-2:4,
+            axis lines =middle, xlabel=$x$, ylabel=$y$,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            grid=both,
+            grid style={dashed, gridColor},
+            xtick={-2,...,4},
+            ytick={-3,...,3},
+          ]
+	  \addplot [very thick, penColor, smooth] {x-1};
+          \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(2,1)};  %% open hole
+        \end{axis}
 \end{tikzpicture}
 \end{image}
 
-\end{question}
+The fact that $f(x)$ is not defined at the point $x=2$ is denoted by
+the open circle. You can think of this as a ``hole'' in the
+function. After looking at the plot, someone with a cavalier attitude
+might just say $f(2) = 1$, \textbf{but this is not true!}
+
+What is correct is that if you name a number close to but not equal to
+$1$, we can find a point $x_0$ close to but not equal $2$, so that
+$f(x_0)$ is closer to $1$ than your number.
+
 
 
 
