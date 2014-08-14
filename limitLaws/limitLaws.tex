@@ -8,31 +8,55 @@
 \outcome{Calculate limits of piecewise functions.}
 \outcome{Calculate limits using the Squeeze Theorem.}
 
-\title{limit laws}
+\title{Limit laws}
 
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  Limit laws help us compute limits without using the definition.
 \end{abstract}
 
 \maketitle
 
+Here is a basic list of limit laws:
+
+\begin{theorem}[Limit Laws]
+Suppose that $\lim_{x\to a}f(x)=L$, $\lim_{x\to a}g(x)=M$, $k$
+is some constant, and $n$ is a positive integer.
+\begin{description}
+\item[\textbf{Constant Law}] $\lim_{x\to a} kf(x) = k\lim_{x\to a}f(x)=kL$.
+\item[\textbf{Sum Law}] $\lim_{x\to a} (f(x)+g(x)) = \lim_{x\to a}f(x)+\lim_{x\to a}g(x)=L+M$.  
+\item[\textbf{Product Law}] $\lim_{x\to a} (f(x)g(x)) = \lim_{x\to a}f(x)\cdot\lim_{x\to a}g(x)=LM$. 
+\item[\textbf{Quotient Law}] $\lim_{x\to a} \frac{f(x)}{g(x)} =
+  \frac{\lim_{x\to a}f(x)}{\lim_{x\to a}g(x)}=\frac{L}{M}$, if $M\ne0$.
+\item[\textbf{Power Law}] $\lim_{x\to a} f(x)^n = \left(\lim_{x\to a}f(x)\right)^n=L^n$.
+\item[\textbf{Root Law}] $\lim_{x\to a} \sqrt[n]{f(x)} = \sqrt[n]{\lim_{x\to
+    a}f(x)}=\sqrt[n]{L}$ provided if $n$ is even, then $f(x)\ge 0$
+  near $a$.
+\item[\textbf{Composition Law}] If $\lim_{x\to a}g(x)=M$ and
+  $\lim_{x\to M}f(x) = f(M)$, then $\lim_{x\to a} f(g(x)) = f(M)$.
+\end{description}
+\end{theorem}
+
+
+
+
+
 \begin{question}
   What is the correct answer to this question?
-
-  \begin{solution}
-    \begin{multiple-choice}
+    \begin{multipleChoice}
       \choice[correct]{Correct answer}
       \choice{First Distractor}
       \choice{Second Distractor}
       \choice{Third Distractor}
-    \end{multiple-choice}  
-  \end{solution}
+    \end{multipleChoice}  
 \end{question}
 
+
+\begin{question}
 What other questions do you have about this lecture?
-\begin{free-response}
-\end{free-response}
+\begin{freeResponse}
+\end{freeResponse}
+\end{question}
 
 \end{document}
