@@ -79,7 +79,7 @@ let's see a plot of this function:
   \colorlet{gridColor}{gray!50} % Color of grid in a plot
   \colorlet{background}{white} % Color of the page
 	\begin{axis}[
-            width=2in,
+            width=6in,
             domain=-2:4,
             axis lines =middle, xlabel=$x$, ylabel=$y$,
             every axis y label/.style={at=(current axis.above origin),anchor=south},
@@ -128,7 +128,7 @@ Here is a plot of $f(x)$:
   \colorlet{gridColor}{gray!50} % Color of grid in a plot
   \colorlet{background}{white} % Color of the page
 	\begin{axis}[
-            width=2in,
+            width=6in,
             domain=-2:4,
             axis lines =middle, xlabel=$x$, ylabel=$y$,
             every axis y label/.style={at=(current axis.above origin),anchor=south},
@@ -148,6 +148,9 @@ Compute
 \[
 \lim_{x\to 2} f(x)
 \]
+\begin{hint}
+As $x$ approaches $2$, does $f(x)$ approach any single number?
+\end{hint}
 \begin{multipleChoice}
   \choice[correct]{$-1$}
   \choice{Undefined.}
@@ -170,6 +173,7 @@ $x$. Let's see a plot of this function:
   \colorlet{textColor}{black} % Color of the page
 	\begin{axis}[
             domain=-2:4,
+            width=6in,
             axis lines =middle, xlabel=$x$, ylabel=$y$,
             every axis y label/.style={at=(current axis.above origin),anchor=south},
             every axis x label/.style={at=(current axis.right of origin),anchor=west},
@@ -202,6 +206,10 @@ $x$. Let's see a plot of this function:
 
 \begin{question}
 What is $\lfloor -2.3\rfloor$?
+\begin{hint}
+Remember, $\lfloor x\rfloor$ is the greatest integer less than or
+equal to $x$.
+\end{hint}
 \begin{multipleChoice}
 \choice[correct]{$-2$}
 \choice{$-3$}
@@ -210,13 +218,19 @@ What is $\lfloor -2.3\rfloor$?
 \end{multipleChoice}
 \end{question}
 
-To answer this next question, you will need to think about the
-definition of a limit as given above.
+
 
 \begin{question}
 What is $\lim_{x\to 2}\lfloor x\rfloor$?
+\begin{hint}
+To answer this next question, you will need to think about the
+definition of a limit as given above.
+\end{hint}
+\begin{hint}
+As $x$ approaches $2$, does $\lfloor x\rfloor$ approach any single number?
+\end{hint}
 \begin{multipleChoice}
-\choice[correct]{$Does not exist.$}
+\choice[correct]{Does not exist.}
 \choice{$2$}
 \choice{$1$}
 \choice{$1.5$}
