@@ -7,31 +7,115 @@
 \outcome{Determine if the Intermediate Value Theorem applies.}
 \outcome{Compute limits using continuity.}
 
-\title{continuity}
+\title{Continuity}
 
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  Let's investigate the connection between continuity and limits.
 \end{abstract}
-
 \maketitle
 
-\begin{question}
-  What is the correct answer to this question?
+Informally, a function is continuous if you can ``draw it'' without
+``lifting your pencil.'' We need a formal definition.
 
-  
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
-  
+\begin{definition} 
+A function $f$ is \textbf{continuous at a point} $a$ if $\lim_{x\to a}
+f(x) = f(a)$.
+\end{definition}
+
+
+
+\begin{question}
+  Consider the function
+\[
+f(x) = 
+\begin{cases} 
+  \frac{x^2 + 10x + 25}{x-5} & \text{if $x\ne 5$,} \\ 
+  10      & \text{if $x= 5$.}
+\end{cases}
+\]
+Is $f(x)$ continuous at the point $x=5$?
+\begin{multipleChoice}
+  \choice[correct]{$f(x)$ is not continuous at $x=5$.}
+  \choice{$f(x)$ is continuous at $x=5$.}
+  \choice{It is impossible to tell if $f(x)$ is continuous at $x=5$.}
+\end{multipleChoice}  
 \end{question}
 
+\begin{question}
+Consider the function
+\[
+f(x) = 
+\begin{cases} 
+  \frac{x^2 + 10x + 25}{x+5} & \text{if $x\ne -5$,} \\ 
+  0      & \text{if $x= -5$.}
+\end{cases}
+\]
+Is $f(x)$ continuous at the point $x=-5$?
+\begin{multipleChoice}
+  \choice[correct]{$f(x)$ is continuous at $x=-5$.}
+  \choice{$f(x)$ is not continuous at $x=-5$.}
+  \choice{It is impossible to tell if $f(x)$ is continuous at $x=-5$.}
+\end{multipleChoice}  
+\end{question}
+
+
+\begin{question}
+What value $k$ makes the following function continuous on the interval
+$(-1,7)$?
+\[
+f(x) = 
+\begin{cases} 
+  -x+5 & \text{if $x< k$,} \\ 
+  x^2+4x-1   & \text{if $x\ge k$.}
+\end{cases}
+\]
+\begin{hint}
+For $f(x)$ to be continuous at $x=a$, we need 
+\[
+\lim_{x\to a-}f(x) = \lim_{x\to a+}f(x) = f(a).
+\]
+\end{hint}
+\begin{prompt}
+$k$ = \answer{1}.
+\end{prompt}
+\end{question}
+
+
+
+\begin{question}
+What value of $k$ makes the following function continuous at $x=5$?
+\[
+f(x) = 
+\begin{cases} 
+  kx-9 & \text{if $x< 5$,} \\ 
+  8x+k   & \text{if $x\ge 5$.}
+\end{cases}
+\]
+\begin{hint}
+For $f(x)$ to be continuous at $x=5$, we need 
+\[
+\lim_{x\to5-}f(x) = \lim_{x\to 5+}f(x) = f(5).
+\]
+\end{hint}
+\begin{prompt}
+$k$ = \answer{49/4} (express your answer as a fraction of integers).
+\end{prompt}
+\end{question}
+
+
+
+
+
+
+
+
+
+
 Write down at least \textbf{five} questions for this lecture. After
-you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
+you have your questions, label them as ``Level 1,'' ``Level 2,'' or
+``Level 3'' where:
 \begin{description}
 \item[Level 1] Means you know the answer, or know exactly how to do this problem.
 \item[Level 2] Means you think you know how to do the problem, or will soon learn how to do the problem.

@@ -3,41 +3,155 @@
 \outcome{What does it mean for a limit to equal infinity?}
 \outcome{What is a vertical asymptote?}
 \outcome{What is the relationship between limits and vertical asymptotes?}
-\outcome{Recognize when a limit is approaching a vertical asymptote.}
-\outcome{Evaluate the limit at a vertical asymptote.}
-\outcome{Match graphs of functions with their equations based on vertical asymptotes.}
 
-\title{infinite limits}
+
+\title{Infinite limits}
 
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  Sometimes when limits don't equal a real number, we can still say a
+  bit more.
 \end{abstract}
-
 \maketitle
 
-\begin{question}
-  What is the correct answer to this question?
+Consider the function
 
+\[
+f(x) = \frac{1}{(x+1)^2}
+\]
+\begin{image}
+\colorlet{penColor}{blue!50!black}
+\begin{tikzpicture}
+	\begin{axis}[
+            domain=-2:1,
+            ymax=100,
+            width=6in,
+            samples=100,
+            axis lines =middle, xlabel=$x$, ylabel=$y$,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+	  \addplot [very thick, penColor, smooth, domain=(-2:-1.1)] {1/(x+1)^2};
+          \addplot [very thick, penColor, smooth, domain=(-.9:1)] {1/(x+1)^2};
+          \addplot [black, dashed] plot coordinates {(-1,0) (-1,100)};
+        \end{axis}
+\end{tikzpicture}
+\end{image}
+While the $\lim_{x\to -1} f(x)$ does not exist, something can still be
+said.
+
+\begin{definition}
+If $f(x)$ grows arbitrarily large as $x$ approaches $a$, we write
+\[
+\lim_{x\to a} f(x) = \infty
+\]
+and say that the limit of $f(x)$ \textbf{approaches infinity} as $x$
+goes to $a$.
+
+If $|f(x)|$ grows arbitrarily large as $x$ approaches $a$ and $f(x)$ is
+negative, we write
+\[
+\lim_{x\to a} f(x) = -\infty
+\]
+and say that the limit of $f(x)$ \textbf{approaches negative infinity}
+as $x$ goes to $a$.
+\end{definition}
+
+
+\begin{question}
+  Evaluate
+
+  \[
+  \lim_{x\to 3} \frac{x+3}{(x-3)^2}.
+  \]
   
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
-  
+  \begin{multipleChoice}
+    \choice[correct]{This limit approaches infinity.}
+    \choice{This limit approaches negative infinity.}
+    \choice{This limit does not exist.}
+    \choice{This limit equals $\frac{1}{6}$.}
+  \end{multipleChoice}
 \end{question}
 
-Write down at least \textbf{five} questions for this lecture. After
-you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
-\begin{description}
-\item[Level 1] Means you know the answer, or know exactly how to do this problem.
-\item[Level 2] Means you think you know how to do the problem, or will soon learn how to do the problem.
-\item[Level 3] Means you have no idea how to do the problem. 
-\end{description}
+
 \begin{question}
+  Evaluate
+
+  \[
+  \lim_{x\to 3} \frac{x+3}{(x-3)^3}.
+  \]
+  
+  \begin{multipleChoice}
+    \choice[correct]{This limit does not exist.}
+    \choice{This limit approaches negative infinity.}
+    \choice{This limit approaches infinity.}
+    \choice{This limit equals $\frac{1}{9}$.}
+  \end{multipleChoice}  
+\end{question}
+
+
+
+\begin{question}
+  Evaluate
+
+  \[
+  \lim_{\theta\to \pi/2} |\sec(\theta)|.
+  \]
+  
+  \begin{multipleChoice}
+    \choice[correct]{This limit does not exist.}
+    \choice{This limit approaches negative infinity.}
+    \choice{This limit approaches infinity.}
+    \choice{This limit equals $\frac{1}{9}$.}
+  \end{multipleChoice}  
+\end{question}
+
+
+\begin{question}
+  Evaluate
+
+  \[
+  \lim_{\theta\to \pi/2} |\sec(\theta)|.
+  \]
+  
+  \begin{multipleChoice}
+    \choice[correct]{This limit approaches infinity.}
+    \choice{This limit approaches negative infinity.}
+    \choice{This limit does not exist.}
+    \choice{This limit equals $1$.}
+  \end{multipleChoice}  
+\end{question}
+
+
+\begin{question}
+  Evaluate
+
+  \[
+  \lim_{\theta\to \pi/2} \sec(\theta).
+  \]
+  
+  \begin{multipleChoice}
+    \choice[correct]{This limit does not exist.}
+    \choice{This limit approaches negative infinity.}
+    \choice{This limit approaches infinity.}
+    \choice{This limit equals $1$.}
+  \end{multipleChoice}  
+\end{question}
+
+
+
+\begin{question}
+Write down at least \textbf{five} questions for this lecture. After
+you have your questions, label them as ``Level 1,'' ``Level 2,'' or
+``Level 3'' where:
+\begin{description}
+\item[Level 1] Means you know the answer, or know exactly how to do
+  this problem.
+\item[Level 2] Means you think you know how to do the problem, or will
+  soon learn how to do the problem.
+\item[Level 3] Means you have no idea how to do the problem.
+\end{description}
   \begin{freeResponse}
   \end{freeResponse}
 \end{question}
