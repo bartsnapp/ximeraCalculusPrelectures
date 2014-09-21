@@ -1,33 +1,87 @@
 \documentclass{ximera}
 
+\input{../preamble.tex}
+
 \outcome{How do you find the derivative of a product?}
 \outcome{How do you find the derivative of a quotient?}
 \outcome{Use the product rule to calculate derivatives.}
 \outcome{Use the quotient rule to calculate derivatives.}
 
-\title{product and quotient rules}
+\title{Product and quotient rules}
 
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  Now we introduce the rules for calculating the derivatives of
+  products and quotients of functions.
 \end{abstract}
-
 \maketitle
 
-\begin{question}
-  What is the correct answer to this question?
+The derivative of $f(x)g(x)$ is \textbf{not} as simple as
+$f'(x)g'(x)$. Never fear, we have a rule for exactly this situation.
 
-  
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
-  
+\begin{theorem}[The Product Rule]
+If $f(x)$ and $g(x)$ are differentiable, then
+\[
+\ddx f(x)g(x) = f(x)g'(x)+f'(x)g(x).
+\]
+\end{theorem}
+
+
+\begin{question}
+  Compute the derivative of $f(x) = xe^x$ with respect to $x$.  
+\begin{prompt}
+$\ddx f(x) = $\answer{e^x + x*e^x}
+\end{prompt}  
 \end{question}
 
+\begin{question}
+  Compute the derivative of $f(x) = e^{\left(x^2\right)}$ with respect to $x$.  
+\begin{hint} 
+Recall that 
+\[
+e^{\left(x^2\right)} = e^x \cdot e^x.
+\]
+\end{hint}
+\begin{prompt}
+$\ddx f(x) = $\answer{e^x + x*e^x}
+\end{prompt}  
+\end{question}
+
+We'd like to have a formula to compute
+\[
+\ddx \frac{f(x)}{g(x)}
+\]
+if we already know $f'(x)$ and $g'(x)$. For this we have the quotient
+rule.
+
+\begin{theorem}[The Quotient Rule]
+If $f(x)$ and $g(x)$ are differentiable, then
+\[
+\ddx \frac{f(x)}{g(x)} = \frac{f'(x)g(x)-f(x)g'(x)}{g(x)^2}.
+\]
+\end{theorem}
+
+\begin{question}
+  Compute the derivative of $f(x) = \frac{1}{x}$ with respect to $x$.  
+\begin{prompt}
+$\ddx f(x) = $\answer{-1/x^2}
+\end{prompt}  
+\end{question}
+
+
+\begin{question}
+  Compute the derivative of $f(x) = \frac{x}{e^x}$ with respect to $x$.  
+\begin{prompt}
+$\ddx f(x) = $\answer{(e^x-x*e^x)/(e^x)^2}
+\end{prompt}  
+\end{question}
+
+
+
+
+
+\begin{question}
 Write down at least \textbf{five} questions for this lecture. After
 you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
 \begin{description}
@@ -35,7 +89,6 @@ you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' 
 \item[Level 2] Means you think you know how to do the problem, or will soon learn how to do the problem.
 \item[Level 3] Means you have no idea how to do the problem. 
 \end{description}
-\begin{question}
   \begin{freeResponse}
   \end{freeResponse}
 \end{question}
