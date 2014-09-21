@@ -1,5 +1,7 @@
 \documentclass{ximera}
 
+\input{../preamble.tex}
+
 \outcome{Understand derivatives of trig functions.}
 \outcome{Understand special trig limits.}
 \outcome{Understand the cyclic nature of the derivatives of sine and cosine.}
@@ -12,24 +14,55 @@
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  Now we will work with our old friends, the trigonometric functions. 
 \end{abstract}
-
 \maketitle
 
-\begin{question}
-  What is the correct answer to this question?
+Here they are, the trigonometric functions and their derivatives:
 
-  
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
-  
+
+\begin{theorem}[The Derivatives of Trigonometric Functions] \hfil
+\begin{itemize}
+\item $\dd{\theta} \sin(\theta) = \cos(\theta)$.
+\item $\dd{\theta} \cos(\theta) = -\sin(\theta)$.
+\item $\dd{\theta} \tan(\theta) = \sec^2(\theta)$.
+\item $\dd{\theta} \sec(\theta) = \sec(\theta)\tan(\theta)$.
+\item $\dd{\theta} \csc(\theta) = -\csc(\theta)\cot(\theta)$.
+\item $\dd{\theta} \cot(\theta) = -\csc^2(\theta)$.
+\end{itemize}
+\end{theorem}
+
+
+\begin{question}
+  Differentiate $f(\theta) = \sin(\theta) + \cos(\theta)$ with respect to $\theta$.
+  \begin{prompt}
+    $\dd{\theta} f(\theta) = $\answer{$\cos(\theta)-\sin(\theta)$}
+  \end{prompt}
 \end{question}
 
+\begin{question}
+  Differentiate $f(\theta) = \sin(\theta)\cdot\cos(\theta)$ with respect to $\theta$.
+  \begin{prompt}
+    $\dd{\theta} f(\theta) = $\answer{$\cos^2(\theta) - \sin^2(\theta)$}
+  \end{prompt}
+\end{question}
+
+
+\begin{question}
+  Differentiate $f(\theta) = \sec(\theta) + \csc(\theta)$ with respect to $\theta$.
+  \begin{prompt}
+    $\dd{\theta} f(\theta) = $\answer{$\sec(\theta)*\tan(\theta) - \cot(\theta)*\csc(\theta)$}
+  \end{prompt}
+\end{question}
+
+\begin{question}
+  Differentiate $f(\theta) = \sec(\theta)\cdot\csc(\theta)$ with respect to $\theta$.
+  \begin{prompt}
+    $\dd{\theta} f(\theta) = $\answer{$\sec^2(\theta) - \csc^2(\theta)$}
+  \end{prompt}
+\end{question}
+
+\begin{question}
 Write down at least \textbf{five} questions for this lecture. After
 you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
 \begin{description}
@@ -37,7 +70,6 @@ you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' 
 \item[Level 2] Means you think you know how to do the problem, or will soon learn how to do the problem.
 \item[Level 3] Means you have no idea how to do the problem. 
 \end{description}
-\begin{question}
   \begin{freeResponse}
   \end{freeResponse}
 \end{question}
