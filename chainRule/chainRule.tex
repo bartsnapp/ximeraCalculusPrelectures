@@ -7,15 +7,43 @@
 \outcome{Take derivatives of compositions of functions using the Chain Rule.}
 \outcome{Take derivatives that require the use of multiple derivative rules.}
 
-\title{chain rule}
+\title{Chain rule}
 
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  The chain rule tells us how to take the derivative of a composition
+  of functions.
 \end{abstract}
-
 \maketitle
+
+
+So far we have seen how to compute the derivative of a function built
+up from other functions by addition, subtraction, multiplication and
+division. There is another very important way that we combine
+functions: composition. The \textit{chain rule} allows us to deal with
+this case.
+
+\section{The Chain Rule}
+
+
+Consider
+\[
+h(x) = (1+2x)^5.
+\] 
+
+While there are several different ways to differentiate this function,
+if we let $f(x) = x^5$ and $g(x) = 1+2x$, then we can express $h(x) =
+f(g(x))$. The question is, can we compute the derivative of a
+composition of functions using the derivatives of the constituents
+$f(x)$ and $g(x)$? To do so, we need the \textit{chain rule}.
+
+\begin{theorem}[Chain Rule]
+If $f(x)$ and $g(x)$ are differentiable, then
+\[
+\ddx f(g(x)) = f'(g(x))g'(x).
+\]
+\end{theorem}
 
 \begin{question}
   What is $\frac{d}{dx} \cos \sin x$?
@@ -27,9 +55,10 @@
       \choice{Second Distractor}
       \choice{Third Distractor}
     \end{multipleChoice}  
-  
 \end{question}
 
+
+\begin{question}
 Write down at least \textbf{five} questions for this lecture. After
 you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
 \begin{description}
@@ -37,7 +66,6 @@ you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' 
 \item[Level 2] Means you think you know how to do the problem, or will soon learn how to do the problem.
 \item[Level 3] Means you have no idea how to do the problem. 
 \end{description}
-\begin{question}
   \begin{freeResponse}
   \end{freeResponse}
 \end{question}
