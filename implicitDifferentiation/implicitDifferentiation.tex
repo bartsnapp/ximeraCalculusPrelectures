@@ -1,5 +1,7 @@
 \documentclass{ximera}
 
+\input{../preamble.tex}
+
 \outcome{How does changing the variable change how we take the derivative?}
 \outcome{Understanding the derivatives of expressions that are not functions or not solved for $y$.}
 \outcome{Implicitly differentiate expressions.}
@@ -7,15 +9,72 @@
 \outcome{Find the equation of the tangent line for curves that are not functions.}
 \outcome{Find derivatives of functions with rational exponents.}
 
-\title{implicit differentiation}
+\title{Implicit differentiation}
 
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+ Implicit differentiation allows us to take the derivative of an
+ equation.
 \end{abstract}
-
 \maketitle
+
+The functions we've been dealing with so far have been
+\textit{explicit functions}, meaning that the
+dependent variable is written in terms of the independent
+variable. For example:
+
+\[
+y=3x^2-2x+1,\qquad y=e^{3x}, \qquad y = \frac{x-2}{x^2-3x+2}.
+\]
+
+However, there are another type of functions, called \textit{implicit
+  functions}. In this case, the dependent variable is not stated
+explicitly in terms of the independent variable. For example:
+
+\[
+x^2+y^2 = 4,\qquad x^3+y^3 = 9xy, \qquad x^4+3x^2 = x^{2/3}+y^{2/3} = 1.
+\]
+
+Your inclination might be simply to solve each of these for $y$ and go
+merrily on your way. However this can be difficult and it may require
+two \textit{branches}, for example to explicitly plot $x^2+y^2 = 4$,
+one needs both $y= \sqrt{4-x^2}$ and $y=-\sqrt{4-x^2}$. Moreover, it
+may not even be possible to solve for $y$. To deal with such
+situations, we use \textit{implicit differentiation}. Let's see an
+illustrative example: Consider the curve defined by
+\[
+x^3+y^3 = 9xy.
+\]
+
+
+\begin{tikzpicture}
+  \begin{axis}[
+      xmin=-6,xmax=6,ymin=-6,ymax=6,
+      width=5in,
+      axis lines=center,
+      xlabel=$x$, ylabel=$y$,
+      every axis y label/.style={at=(current axis.above origin),anchor=south},
+      every axis x label/.style={at=(current axis.right of origin),anchor=west},
+    ]        
+    \addplot [very thick, blue!50!black, smooth, samples=100, domain=(-.99:0)] ({9*x/(1+x^3)},{9*x^2/(1+x^3)});
+    \addplot [very thick, blue!50!black, smooth, samples=100, domain=(-.99:0)] ({9*x^2/(1+x^3)},{9*x/(1+x^3)});
+    \addplot [very thick, blue!50!black, smooth, samples=100, domain=(0:1)] ({9*x/(1+x^3)},{9*x^2/(1+x^3)});
+    \addplot [very thick, blue!50!black, smooth, samples=100, domain=(0:1)] ({9*x^2/(1+x^3)},{9*x/(1+x^3)});
+  \end{axis}
+\end{tikzpicture}
+
+
+
+\begin{question}
+\begin{enumerate}
+\item Compute $\dydx$.
+\item Find the slope of the tangent line at $(4,2)$.
+\end{enumerate}
+\end{question}
+
+
+
 
 \begin{question}
   What is the correct answer to this question?
@@ -30,6 +89,8 @@
   
 \end{question}
 
+
+\begin{question}
 Write down at least \textbf{five} questions for this lecture. After
 you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
 \begin{description}
@@ -37,7 +98,6 @@ you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' 
 \item[Level 2] Means you think you know how to do the problem, or will soon learn how to do the problem.
 \item[Level 3] Means you have no idea how to do the problem. 
 \end{description}
-\begin{question}
   \begin{freeResponse}
   \end{freeResponse}
 \end{question}
