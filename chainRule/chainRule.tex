@@ -1,5 +1,7 @@
 \documentclass{ximera}
 
+\input{../preamble.tex}
+
 \outcome{Recognize a composition of functions.}
 \outcome{How do you take the derivative of a composition of functions?}
 \outcome{How does rate of change work when quantities are dependent upon each other?}
@@ -22,12 +24,7 @@ So far we have seen how to compute the derivative of a function built
 up from other functions by addition, subtraction, multiplication and
 division. There is another very important way that we combine
 functions: composition. The \textit{chain rule} allows us to deal with
-this case.
-
-\section{The Chain Rule}
-
-
-Consider
+this case. Consider
 \[
 h(x) = (1+2x)^5.
 \] 
@@ -46,16 +43,61 @@ If $f(x)$ and $g(x)$ are differentiable, then
 \end{theorem}
 
 \begin{question}
-  What is $\frac{d}{dx} \cos \sin x$?
-
-  
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
+  Given $h(x) = (1+2x)^5$, compute
+\[
+\ddx h(x).
+\]
+\begin{prompt}
+$\ddx h(x) = $\answer{10*(1+2*x)^4}
+\end{prompt}
 \end{question}
+
+You can also use the chain rule when you have a table of function
+values.
+\[
+\begin{array}{|c||c|c|c|c|c|}
+\hline
+ x    & 1 & 2 & 3 & 4 & 5 \\ \hline \hline 
+f(x)  & 3 & 4 & 1 & 3 & 1 \\ \hline
+f'(x) & 2 & 1 & 4 & 2 & 3 \\ \hline
+g(x)  & 5 & 3 & 5 & 1 & 4 \\ \hline
+g'(x) & 4 & 5 & 2 & 5 & 2 \\ \hline
+\end{array}
+\]
+
+\begin{question}
+Use the table above to compute
+\[
+\left.\ddx f(g(x))\right|_{x=2}
+\]
+\begin{prompt}
+$\left.\ddx f(g(x))\right|_{x=2}=$\answer{20}
+\end{prompt}
+\end{question}
+
+
+\begin{question}
+Use the table above to compute
+\[
+\left.\ddx g(f(x))\right|_{x=3}
+\]
+\begin{prompt}
+$\left.\ddx g(f(x))\right|_{x=3}=$\answer{16}
+\end{prompt}
+\end{question}
+
+
+\begin{question}
+Use the table above to compute
+\[
+\left.\ddx f(f(x))\right|_{x=1}
+\]
+\begin{prompt}
+$\left.\ddx f(f(x))\right|_{x=1}=$\answer{8}
+\end{prompt}
+\end{question}
+
+
 
 
 \begin{question}
