@@ -64,29 +64,73 @@ x^3+y^3 = 9xy.
   \end{axis}
 \end{tikzpicture}
 
+Let's try to compute $\dydx$:
 
 
 \begin{question}
-\begin{enumerate}
-\item Compute $\dydx$.
-\item Find the slope of the tangent line at $(4,2)$.
-\end{enumerate}
+We start by taking the derivative of the left-hand side of 
+\[
+x^3+y^3 = 9xy.
+\]
+However, when we do this we treat $y$ as a function of $x$. This means:
+\[
+\ddx y = \dydx.
+\]
+Compute 
+\[
+\ddx x^3+y^3.
+\]
+\begin{hint}
+Use the chain rule.
+\end{hint}
+\begin{prompt}
+$\ddx x^3+y^3 = $\answer{3*x^2 + 3*y^2 *dy/dx}
+\end{prompt}
+\end{question}
+
+\begin{question}
+Now we take the derivative of the right-hand side of 
+\[
+x^3+y^3 = 9xy.
+\]
+However, again when we do this we treat $y$ as a function of $x$. This
+means:
+\[
+\ddx y = \dydx.
+\]
+Compute 
+\[
+\ddx 9xy
+\]
+\begin{hint}
+Use the product rule.
+\end{hint}
+\begin{prompt}
+$\ddx 9xy= $\answer{9*x*dy/dx + 9y}
+\end{prompt}
 \end{question}
 
 
+\begin{question}
+Now put our two sides together and solve for $\dydx$:
+\begin{hint}
+We now have 
+\[
+3x^2 + 3y^2\dydx= 9x\dydx + 9y,
+\]
+solve for $\dydx$.
+\end{hint}
+\begin{prompt}
+$\dydx=$\answer{(3x^2-9y)/(9x-3y^2)}.
+\end{prompt}
+\end{question}
 
 
 \begin{question}
-  What is the correct answer to this question?
-
-  
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
-  
+What is the slope of the tangent line when $x=4$ and $y=2$?
+\begin{prompt}
+The slope is \answer{5/4}.
+\end{prompt}
 \end{question}
 
 
