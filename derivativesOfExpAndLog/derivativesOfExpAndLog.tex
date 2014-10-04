@@ -8,27 +8,95 @@
 \outcome{Take derivatives of functions raised to functions.}
 \outcome{Apply the generalized power rule.}
 
-\title{derivatives of exp and log}
+\title{Derivatives of exp and log}
 
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  A few algebraic tricks will let us take derivatives of logarithms and complicated exponential functions.
 \end{abstract}
 
 \maketitle
 
-\begin{question}
-  What is the correct answer to this question?
+To find the derivative of the natural log function, we use the fact that it is the inverse of the natural exponential function (which we know how to differentiate), and implicit differentiation.
 
-  
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
-  
+\begin{align*}
+y&=\log(x)\\
+e^y &= e^\log(x)\\
+e^y &= x\\
+\frac{d}{dx} e^y &= \frac{d}{dx} x\\
+e^y\frac{dy}{dx} &= 1\\
+x\frac{dy}{dx} &= 1 \text{ since $e^y=x$ by the third line }\\
+\frac{dy}{dx} &= \frac{1}{x}
+\end{align*}
+
+Thus we have found that $\frac{d}{dx} \log(x) = \frac{1}{x}$
+
+\begin{question}
+	Compute $\frac{d}{dx} \log(1+x^2)$
+	\begin{solution}
+	\begin{hint}
+		Use the chain rule.
+	\end{hint}
+		$\frac{d}{dx} \log(1+x^2)=$\answer{2x/(1+x^2)}
+	\end{solution}
+\end{question}
+
+The most important computation in this section is the following computation, which is not  calculus, but pure algebra:
+
+\[
+	u^v = e^(\log(u^v)) = e^(v\log(u))
+\]
+
+All of the results of this section follow from this one unifying formula, so there is no need to memorize a whole bunch of formulas.   We will refer to it as "the unifying formula" for the rest of this prelecture.
+
+
+\begin{question}
+	Compute $\frac{d}{dx} 3^x $
+	\begin{solution}
+		\begin{hint}
+			Rewrite $3^x$ as $e^{x\log(3)}$ and use the chain rule.
+		\end{hint}
+		$\frac{d}{dx} 3^x =$ \answer{log(3)*3^x} 
+	\end{solution}
+\end{question}
+
+\begin{question}
+	Compute $\frac{d}{dx} x^x$.
+	\begin{solution}
+		\begin{hint}
+			Rewrite $x^x$ as $e^{x\log(x)}$.
+		\end{hint}
+		\begin{hint}
+			Then use the chain rule, followed by the product rule.
+		\end{hint}
+		$\frac{d}{dx} (1+\frac{x^2}{100})^x = $ \answer{x^x*(1+log(x))}
+	\end{solution}
+\end{question}
+
+The unifying formula lets us express any exponential function in terms of the natural exponential function.  It also lets us write any logarithm in terms of the natural logarithm:
+
+\begin{align*}
+	y &= \log_b(x)\\
+	b^y &=  x\\
+	e^{y\log(b)} = e^{\log(x)} \text{ where we use the "unifying formula"}\\
+	y\log(b) = \log(x)\\
+	y = \frac{\log(x)}{\log(b)}
+\end{align*}
+
+So we can conclude that $\log_b(x) = \frac{\log(x)}{\log(b)}$.
+
+\begin{question}
+	Compute $\frac{d}{dx} log_2(x)$.
+	\begin{solution}
+		\begin{hint}
+			Rewrite $\log_2(x)$ as $\frac{\log(x)}{\log(2)}$ and differentiate.
+		\end{hint}
+		\begin{hint}
+			$\log(2)$ is just a constant!
+		\end{hint}
+		$\frac{d}{dx} log_2(x)=$\answer{1/(x*log(2))}
+	\end{solution}
 \end{question}
 
 Write down at least \textbf{five} questions for this lecture. After
