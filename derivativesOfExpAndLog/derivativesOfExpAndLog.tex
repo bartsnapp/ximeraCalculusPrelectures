@@ -18,86 +18,84 @@
 
 \maketitle
 
-To find the derivative of the natural log function, we use the fact that it is the inverse of the natural exponential function (which we know how to differentiate), and implicit differentiation.
+To find the derivative of the natural log function, we use the fact
+that it is the inverse of the natural exponential function (which we
+know how to differentiate), and implicit differentiation.
 
 \begin{align*}
-y&=\log(x)\\
-e^y &= e^\log(x)\\
-e^y &= x\\
+y&=\ln(x)\\
+e^y &= e^{\ln(x)}\\
+e^y &= x\\                      
 \frac{d}{dx} e^y &= \frac{d}{dx} x\\
 e^y\frac{dy}{dx} &= 1\\
 x\frac{dy}{dx} &= 1 \text{ since $e^y=x$ by the third line }\\
 \frac{dy}{dx} &= \frac{1}{x}
 \end{align*}
 
-Thus we have found that $\frac{d}{dx} \log(x) = \frac{1}{x}$
+Thus we have found that $\frac{d}{dx} \ln(x) = \frac{1}{x}$
 
 \begin{question}
-	Compute $\frac{d}{dx} \log(1+x^2)$
-	\begin{solution}
+	Compute $\frac{d}{dx} \ln(1+x^2)$
 	\begin{hint}
-		Use the chain rule.
+	  Use the chain rule.
 	\end{hint}
-		$\frac{d}{dx} \log(1+x^2)=$\answer{2x/(1+x^2)}
-	\end{solution}
+	$\frac{d}{dx} \ln(1+x^2)=$\answer{2x/(1+x^2)}
 \end{question}
 
 The most important computation in this section is the following computation, which is not  calculus, but pure algebra:
 
 \[
-	u^v = e^(\log(u^v)) = e^(v\log(u))
+u^v = e^(\ln(u^v)) = e^(v\ln(u))
 \]
 
 All of the results of this section follow from this one unifying formula, so there is no need to memorize a whole bunch of formulas.   We will refer to it as "the unifying formula" for the rest of this prelecture.
 
 
 \begin{question}
-	Compute $\frac{d}{dx} 3^x $
-	\begin{solution}
-		\begin{hint}
-			Rewrite $3^x$ as $e^{x\log(3)}$ and use the chain rule.
-		\end{hint}
-		$\frac{d}{dx} 3^x =$ \answer{log(3)*3^x} 
-	\end{solution}
+  Compute $\frac{d}{dx} 3^x $
+  \begin{hint}
+    Rewrite $3^x$ as $e^{x\ln(3)}$ and use the chain rule.
+  \end{hint}
+  $\frac{d}{dx} 3^x =$ \answer{ln(3)*3^x} 
 \end{question}
 
 \begin{question}
-	Compute $\frac{d}{dx} x^x$.
-	\begin{solution}
-		\begin{hint}
-			Rewrite $x^x$ as $e^{x\log(x)}$.
-		\end{hint}
-		\begin{hint}
-			Then use the chain rule, followed by the product rule.
-		\end{hint}
-		$\frac{d}{dx} (1+\frac{x^2}{100})^x = $ \answer{x^x*(1+log(x))}
-	\end{solution}
+  Compute $\frac{d}{dx} x^x$.
+  
+  \begin{hint}
+    Rewrite $x^x$ as $e^{x\ln(x)}$.
+  \end{hint}
+  \begin{hint}
+    Then use the chain rule, followed by the product rule.
+  \end{hint}
+  $\frac{d}{dx} (1+\frac{x^2}{100})^x = $ \answer{x^x*(1+ln(x))}
 \end{question}
 
 The unifying formula lets us express any exponential function in terms of the natural exponential function.  It also lets us write any logarithm in terms of the natural logarithm:
 
 \begin{align*}
-	y &= \log_b(x)\\
+	y &= \ln_b(x)\\
 	b^y &=  x\\
-	e^{y\log(b)} = e^{\log(x)} \text{ where we use the "unifying formula"}\\
-	y\log(b) = \log(x)\\
-	y = \frac{\log(x)}{\log(b)}
+	e^{y\ln(b)} &= e^{\ln(x)} \text{ where we use the "unifying formula"}\\
+	y\ln(b) &= \ln(x)\\
+	y &= \frac{\ln(x)}{\ln(b)}
 \end{align*}
 
-So we can conclude that $\log_b(x) = \frac{\log(x)}{\log(b)}$.
+So we can conclude that $\log_b(x) = \frac{\ln(x)}{\ln(b)}$.
 
 \begin{question}
 	Compute $\frac{d}{dx} log_2(x)$.
-	\begin{solution}
-		\begin{hint}
-			Rewrite $\log_2(x)$ as $\frac{\log(x)}{\log(2)}$ and differentiate.
-		\end{hint}
-		\begin{hint}
-			$\log(2)$ is just a constant!
-		\end{hint}
-		$\frac{d}{dx} log_2(x)=$\answer{1/(x*log(2))}
-	\end{solution}
+	\begin{hint}
+	  Rewrite $\log_2(x)$ as $\frac{\ln(x)}{\ln(2)}$ and differentiate.
+	\end{hint}
+	\begin{hint}
+	  $\ln(2)$ is just a constant!
+	\end{hint}
+	$\frac{d}{dx} log_2(x)=$\answer{1/(x*log(2))}
 \end{question}
+
+
+\begin{question}
 
 Write down at least \textbf{five} questions for this lecture. After
 you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
@@ -106,7 +104,6 @@ you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' 
 \item[Level 2] Means you think you know how to do the problem, or will soon learn how to do the problem.
 \item[Level 3] Means you have no idea how to do the problem. 
 \end{description}
-\begin{question}
   \begin{freeResponse}
   \end{freeResponse}
 \end{question}
