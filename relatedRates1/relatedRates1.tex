@@ -6,12 +6,13 @@
 \outcome{Understand the process of solving related rates problems.}
 \outcome{Solve related rates word problems.}
 
-\title{related rates1}
+\title{Related rates}
 
 \begin{document}
 
 \begin{abstract}
-	When quantities satisfy a relation, their rates also satisfy relations
+	When quantities satisfy a relation, their rates also satisfy
+        relations
 \end{abstract}
 
 \maketitle
@@ -24,85 +25,111 @@
 
 A related rates problem is a word problem of the following form:
 
-\being{itemize}
-\item You are interested in some quantities which depend on time: for example $A(t)$, $B(t)$, and $C(t)$)
-\item You are either told these quantities satisfy a particular equation, or you can identify and equation they satisfy through geometry: for example, $A^3+B^2 = C^4$.  Often this step involves drawing a picture.
+\begin{itemize}
+\item You are interested in some quantities which depend on time: for
+  example $A(t)$, $B(t)$, and $C(t)$)
+\item You are either told these quantities satisfy a particular
+  equation, or you can identify and equation they satisfy through
+  geometry: for example, $A^3+B^2 = C^4$.  Often this step involves
+  drawing a picture.
 \item You are given all but one of the following pieces of data
 	\begin{itemize}
-	\item The value of the quantities \textbf{at a particular time}:  for example $A=2$, $B=4$, $C=1$
-	\item The rate of change in these quantities with respect to time \textbf{at that same instant}:  for example $\frac{dA}{dt} = 3$, $\frac{dB}{dt} = 1$, $\frac{dC}{dt} = ?$
+	\item The value of the quantities \textbf{at a particular
+          time}: for example $A=2$, $B=4$, $C=1$
+	\item The rate of change in these quantities with respect to
+          time \textbf{at that same instant}: for example
+          $\frac{dA}{dt} = 3$, $\frac{dB}{dt} = 1$, $\frac{dC}{dt} =$?
 	\end{itemize}
-\item You are asked to find the remaining datum:  in our example, $\frac{dC}{dt}$
+\item You are asked to find the remaining datum: in our example,
+  $\frac{dC}{dt}$
 \end{itemize}
 
-The bolded text above is particularly important.  In a related rates problem, you must not confuse $A=2$ with the statement that $A$ stays constant for all time.  Generally all of the quantities will be changing with respect to time,
-and you will only have information about them at a particular instant.
+The bolded text above is particularly important.  In a related rates
+problem, you must not confuse $A=2$ with the statement that $A$ stays
+constant for all time.  Generally all of the quantities will be
+changing with respect to time, and you will only have information
+about them at a particular instant.
 
-You can solve these kinds of problems by implicitly differentiating the relation with respect to time, which "relates the rates", and then using the given information to solve for the unknown datum.
+You can solve these kinds of problems by implicitly differentiating
+the relation with respect to time, which ``relates the rates,'' and then
+using the given information to solve for the unknown datum.
 
 In our example, we would proceed as follows:
 
-Since $A^3+B^2 = C^4$, by implicitly differentiating with respect to time, we obtain
+Since $A^3+B^2 = C^4$, by implicitly differentiating with respect to
+time, we obtain
 
 \begin{align*}
-\frac{d}{dt} \[A^3+B^2 \] &= \frac{d}{dt} C^4\\
+\frac{d}{dt}\left( A^3+B^2 \right) &= \frac{d}{dt} C^4\\ 
 3A^2\frac{dA}{dt}+2B\frac{dB}{dt} &= 4C^3\frac{dC}{dt}
 \end{align*}
 
-But we are told that, at the instant of interest, $A=2$, $B=4$, $C=1$ and \frac{dA}{dt} = 3$, $\frac{dB}{dt} = 1$.  So we have 
+But we are told that, at the instant of interest, $A=2$, $B=4$, $C=1$
+and $\frac{dA}{dt} = 3$, $\frac{dB}{dt} = 1$.  So we have
 
-$
-3(2)^2(3)+2(4)(1) &= 4(1)^3\frac{dC}{dt}
-$
+\[
+3(2)^2(3)+2(4)(1) = 4(1)^3\frac{dC}{dt}
+\]
 
 so 
 
-$\frac{dC}{dt} = 11$
+\[
+\frac{dC}{dt} = 11
+\]
 
 Now let's try a related rates problem.
 
 \begin{question}
-	A spherical tumor is growing in a vat in a research laboratory at OSU.  When it is measured at $3:00pm$, we observe that the radius of the sphere is $4cm$, and its radius is changing at a rate of $3 \frac{cm}{min}$
-	At what rate is the volume of the tumor growing during this time, in $\frac{\textrm{cm^3}}{min}$?
-	
-	\begin{solution}
-		\begin{hint}
-			Remember that $V = \frac{4}{3}\pi r^3$
-		\end{hint}
-		\begin{hint}
-			Differentiate this relationship implicitly with respect to time, and use what you know about the tumor at the instant we are interested in.
-		\end{hint}
-		The volume of the tumor is growing at a rate \answer{192*pi} $\frac{\textrm{cm^3}}{min}$
-	\end{solution}
+	A spherical tumor is growing in a vat in a research laboratory
+        at OSU.  When it is measured at $3:00$pm, we observe that the
+        radius of the sphere is $4cm$, and its radius is changing at a
+        rate of $3 \frac{\textrm{cm}}{\textrm{min}}$ At what rate is
+        the volume of the tumor growing during this time, in
+        $\frac{\textrm{cm}^3}{\textrm{min}}$?
+	\begin{hint}
+	  Remember that $V = \frac{4}{3}\pi r^3$
+	\end{hint}
+	\begin{hint}
+	  Differentiate this relationship implicitly with respect to
+          time, and use what you know about the tumor at the instant
+          we are interested in.
+	\end{hint}
+	The volume of the tumor is growing at a rate \answer{192*pi} $\frac{\textrm{cm}^3}{\textrm{min}}$
 \end{question}
 
 Let's try another related rates problem.
 
 \begin{question}
-	Two planes leave an airport at the same time, one traveling north at $300 \frac{\textrm{km}}{\textrm{h}} $, the other headed west at $400 \frac{\textrm{km}}{\textrm{h}}$.  $3$ hours later, at what rate is the distance between the two planes changing? 
-	\begin{solution}
-		\begin{hint}
-			Letting $x$ be the distance the first plane travels, $y$ be the distance the second plane travels, and $z$ be the distance between them, we know by the pythagorean theorem that $x^2+y^2=z^2$.
-		\end{hint}
-		\begin{hint}
-			Differentiate implicitly with respect to time.  You will need to find the value of $x$, $y$, and $z$ at $t=3$ .
-		\end{hint}
-		\begin{hint}
-			We could also solve this problem without related rates by finding an expression for $z(t)$ directly in terms of time.
-		\end{hint}
-		The planes are moving apart at a rate of \answer{500} $\frac{\textrm{km}}{\textrm{h}}$
-	\end{solution}
+  Two planes leave an airport at the same time, one traveling north at
+  $300 \frac{\textrm{km}}{\textrm{h}} $, the other headed west at $400
+  \frac{\textrm{km}}{\textrm{h}}$.  $3$ hours later, at what rate is
+  the distance between the two planes changing?
+  \begin{hint}
+    Letting $x$ be the distance the first plane travels, $y$ be the
+    distance the second plane travels, and $z$ be the distance between
+    them, we know by the pythagorean theorem that $x^2+y^2=z^2$.
+  \end{hint}
+  \begin{hint}
+    Differentiate implicitly with respect to time.  You will need to
+    find the value of $x$, $y$, and $z$ at $t=3$ .
+  \end{hint}
+  \begin{hint}
+    We could also solve this problem without related rates by finding
+    an expression for $z(t)$ directly in terms of time.
+  \end{hint}
+  The planes are moving apart at a rate of \answer{500}
+  $\frac{\textrm{km}}{\textrm{h}}$
 \end{question}
 
-
+\begin{question}
 Write down at least \textbf{five} questions for this lecture. After
-you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
+you have your questions, label them as ``Level 1,'' ``Level 2,'' or
+``Level 3'' where:
 \begin{description}
 \item[Level 1] Means you know the answer, or know exactly how to do this problem.
 \item[Level 2] Means you think you know how to do the problem, or will soon learn how to do the problem.
 \item[Level 3] Means you have no idea how to do the problem. 
 \end{description}
-\begin{question}
   \begin{freeResponse}
   \end{freeResponse}
 \end{question}
