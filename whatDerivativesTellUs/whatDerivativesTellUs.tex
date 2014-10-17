@@ -74,10 +74,10 @@ We know that the sign of the derivative tells us whether a function is
 increasing or decreasing. Likewise, the sign of the second derivative
 $f''(x)$ tells us whether $f'(x)$ is increasing or decreasing. We
 summarize this in the table below:
-
-\begin{tabular}{c|c|c|} %% gives thick lines
- & $f'(x)<0$ & $f'(x) > 0$ \\ \hline & & \\[-1.5ex]
-$f''(x)> 0$ & 
+\[
+\begin{array}{c|c|c|} %% gives thick lines
+ & f'(x)<0 & f'(x) > 0 \\ \hline & & \\[-1.5ex]
+f''(x)> 0 & 
 \begin{minipage}{2in}
 \[
 \begin{tikzpicture}
@@ -131,7 +131,7 @@ getting \textit{steeper}. In this case the curve is \textbf{concave
 & & 
 \\\hline 
 & & \\[-1.5ex]
-$f''(x)<0$ &
+f''(x)<0 &
 \begin{minipage}{2in}
 \[
 \begin{tikzpicture}
@@ -182,8 +182,8 @@ that $f(x)$ slopes up and is getting less \textit{steep}. In this case the curve
 \\[-2ex]
 & & 
 \\\hline 
-\end{tabular}
-
+\end{array}
+\]
 
 If we are trying to understand the shape of the graph of a function,
 knowing where it is concave up and concave down helps us to get a more
@@ -221,8 +221,8 @@ True or false: If $f''(a) = 0$, then $x=a$ is an inflection point.
 
 It is instructive to see some examples and nonexamples of inflection
 points.
-
-\begin{tabular}{cccc}
+\[
+\begin{array}{cccc}
 \begin{tikzpicture}
   \colorlet{textColor}{black}
   \colorlet{penColor}{blue!50!black}
@@ -316,7 +316,8 @@ This is an inflection point. The concavity changes from concave up to concave do
 This is \textbf{not} an inflection point. The curve is concave down on either side of the point.
 \end{minipage}
 
-\end{tabular}
+\end{array}
+\]
 
 We identify inflection points by first finding where $f''(x)$ is zero
 or undefined and then checking to see whether $f''(x)$ does in fact go
