@@ -73,12 +73,12 @@ must conclude that $x=6$ is a local minimum.
 We know that the sign of the derivative tells us whether a function is
 increasing or decreasing. Likewise, the sign of the second derivative
 $f''(x)$ tells us whether $f'(x)$ is increasing or decreasing. We
-summarize this in the table below:
+summarize this below:
 
-\begin{tabular}{c|c|c|} %% gives thick lines
- & $f'(x)<0$ & $f'(x) > 0$ \\ \hline & & \\[-1.5ex]
-$f''(x)> 0$ & 
-\begin{minipage}{2in}
+
+\paragraph{$f'(x)<0$ and $f''(x)>0$}
+
+\begin{image}
 \begin{tikzpicture}
     \colorlet{textColor}{black}
     \colorlet{penColor}{blue!50!black}
@@ -94,14 +94,15 @@ $f''(x)> 0$ &
           \node at (axis cs:.7,.4) [textColor] {\footnotesize Concave Up};
         \end{axis}
 \end{tikzpicture}
-\begin{minipage}{2in}\footnotesize
+\end{image}
+
 Here $f'(x)<0$ and $f''(x)>0$. This means that $f(x)$ slopes down and
 is getting \textit{less steep}. In this case the curve is
 \textbf{concave up}.
-\end{minipage}
-\end{minipage}
-&
-\begin{minipage}{2in}
+
+\paragraph{$f'(x)>0$ and $f''(x)>0$}
+
+\begin{image}
 \begin{tikzpicture}
     \colorlet{textColor}{black}
     \colorlet{penColor}{blue!50!black}
@@ -117,18 +118,15 @@ is getting \textit{less steep}. In this case the curve is
           \node at (axis cs:.3,.4) [textColor] {\footnotesize Concave Up};
         \end{axis}
 \end{tikzpicture}
-\begin{minipage}{2in}\footnotesize
+\end{image}
+
 Here $f'(x)>0$ and $f''(x)>0$. This means that $f(x)$ slopes up and is
 getting \textit{steeper}. In this case the curve is \textbf{concave
   up}.
-\end{minipage}
-\end{minipage}
-\\[-2ex]
-& & 
-\\\hline 
-& & \\[-1.5ex]
-f''(x)<0 &
-\begin{minipage}{2in}
+
+\paragraph{$f'(x)<0$ and $f''(x)<0$}
+
+\begin{image}
 \begin{tikzpicture}
   \colorlet{textColor}{black}
   \colorlet{penColor}{blue!50!black}
@@ -144,13 +142,15 @@ f''(x)<0 &
           \node at (axis cs:.4,.4) [textColor] {\footnotesize Concave Down};
         \end{axis}
 \end{tikzpicture}
-\begin{minipage}{2in}\footnotesize
+\end{image}
+
 Here $f'(x)<0$ and $f''(x)<0$. This means
 that $f(x)$ slopes down and is getting \textit{steeper}. In this case the curve is \textbf{concave down}.
-\end{minipage}
-\end{minipage}
-&
-\begin{minipage}{2in}
+
+
+\paragraph{$f'(x)>0$ and $f''(x)<0$}
+
+\begin{image}
   \begin{tikzpicture}
     \colorlet{textColor}{black}
     \colorlet{penColor}{blue!50!black}
@@ -166,15 +166,11 @@ that $f(x)$ slopes down and is getting \textit{steeper}. In this case the curve 
           \node at (axis cs:.6,.4) [textColor] {\footnotesize Concave Down};
         \end{axis}
 \end{tikzpicture}
-\begin{minipage}{2in}\footnotesize
-Here $f'(x)>0$ and $f''(x)<0$. This means
-that $f(x)$ slopes up and is getting less \textit{steep}. In this case the curve is \textbf{concave down}.
-\end{minipage}
-\end{minipage}
-\\[-2ex]
-& & 
-\\\hline 
-\end{tabular}
+\end{image}
+
+Here $f'(x)>0$ and $f''(x)<0$. This means that $f(x)$ slopes up and is
+getting less \textit{steep}. In this case the curve is \textbf{concave
+  down}.
 
 If we are trying to understand the shape of the graph of a function,
 knowing where it is concave up and concave down helps us to get a more
@@ -212,8 +208,10 @@ True or false: If $f''(a) = 0$, then $x=a$ is an inflection point.
 
 It is instructive to see some examples and nonexamples of inflection
 points.
-\[
-\begin{array}{cccc}
+
+\begin{example}
+
+\begin{image}
 \begin{tikzpicture}
   \colorlet{textColor}{black}
   \colorlet{penColor}{blue!50!black}
@@ -229,9 +227,16 @@ points.
           \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(1,1)};
         \end{axis}
 \end{tikzpicture}
+\end{image}
 
-&
+This is an inflection point. The concavity changes from concave up to
+concave down.
+\end{example}
 
+
+\begin{example}
+
+\begin{image}
 \begin{tikzpicture}
   \colorlet{textColor}{black}
   \colorlet{penColor2}{red!50!black}
@@ -246,9 +251,16 @@ points.
           \addplot[color=penColor2,fill=penColor2,only marks,mark=*] coordinates{(1,.75)};
         \end{axis}
 \end{tikzpicture} 
+\end{image}
 
-&
+This is \textbf{not} an inflection point. The curve is concave down on
+either side of the point.
+\end{example}
 
+
+\begin{example}
+
+\begin{image}
 \begin{tikzpicture}
   \colorlet{textColor}{black}
   \colorlet{penColor}{blue!50!black}
@@ -265,9 +277,17 @@ points.
           \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(1,1)};
         \end{axis}
 \end{tikzpicture}
+\end{image}
 
-&
+This is an inflection point. The concavity changes from concave up to
+concave down.
 
+\end{example}
+
+
+\begin{example}
+
+\begin{image}
 \begin{tikzpicture}
     \colorlet{textColor}{black}
     \colorlet{penColor2}{red!50!black}
@@ -282,33 +302,12 @@ points.
           \addplot [very thick, penColor2, smooth,domain=(0:1)] {sqrt(abs(1-x))+.5};
           \addplot[color=penColor2,fill=penColor2,only marks,mark=*] coordinates{(1,.5)};
         \end{axis}
-\end{tikzpicture} \\
+\end{tikzpicture}
+\end{image}
 
-\begin{minipage}{2in}\footnotesize
-This is an inflection point. The concavity changes from concave up to
-concave down.
-\end{minipage}
-
-& 
-
-\begin{minipage}{2in}\footnotesize
 This is \textbf{not} an inflection point. The curve is concave down on either side of the point.
-\end{minipage}
+\end{example}
 
-& 
-
-\begin{minipage}{2in}\footnotesize
-This is an inflection point. The concavity changes from concave up to concave down.
-\end{minipage}
-
-&
-
-\begin{minipage}{2in}\footnotesize
-This is \textbf{not} an inflection point. The curve is concave down on either side of the point.
-\end{minipage}
-
-\end{array}
-\]
 
 We identify inflection points by first finding where $f''(x)$ is zero
 or undefined and then checking to see whether $f''(x)$ does in fact go
