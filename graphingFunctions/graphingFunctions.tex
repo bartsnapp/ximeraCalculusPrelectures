@@ -15,71 +15,68 @@
 
 
 
-This prefecture is one long extended exercise.  We will learn everything we can about the function $f(x) = \frac{x}{x^2-1}$, and use this information to graph $f$.
+This prefecture is one long extended exercise.  We will learn everything we can about the function $f(x) = x^3-12x$, and use this information to graph $f$.
 \textbf{Do not} use a graphing calculator to help you during this activity.  It will rob you of the whole experience.
 
-\begin{question}
+
 
 \textbf{Domain}
 
-\begin{solution}
+\begin{question}
 What is the domain of $f$?
  
     \begin{multipleChoice}
-      \choice[correct]{$\mathbb{R}-\{-1,1\}$}
-      \choice{$(1,\infty)$}
-      \choice{$(-\infty,1)$}
-      \choice{$(-1,1)$}
+      \choice[correct]{$\mathbb{R}$}
+      \choice{$(0,\infty)$}
+      \choice{$(-12,12)$}
+      \choice{$(-\sqrt{12},\sqrt{12})$}
+      \choice{DNE}
     \end{multipleChoice}
     
-\end{solution}    
+\end{question}    
 
-\textbf{Symmetry}
 
-\begin{solution}
-   What sort of symmetry does $f$ have?
-   
-    \begin{multipleChoice}
-      \choice[correct]{odd}
-      \choice{even}
-      \choice{symmetry about the lines $x=1$ and $x=-1$ }
-      \choice{symmetry about the points $(1,0)$ and $(-1,0)$}
-    \end{multipleChoice}
-
-\end{solution}    
-
-    Right!  So we only have to graph $f$ on $[0,\infty)$, and use symmetry to graph it on the other half of its domain.
-    
  \textbf{Find First and Second Derivative}
  
- \begin{solution}
- 	$f'(x)=$\answer{-2*x^2/(x^2 - 1)^2 + 1/(x^2 - 1)}
- \end{solution}
+ \begin{question}
+ 	$f'(x)=$\answer{3x^2-12}
+ \end{question}
  
- \begin{solution}
- 	$f''(x)=$\answer{8*x^3/(x^2 - 1)^3 - 6*x/(x^2 - 1)^2}
- \end{solution}
+ \begin{question}
+ 	$f''(x)=$\answer{6x}
+ \end{question}
  
  \textbf{Find the Critical Points and Possible Inflection Points}
  
- \begin{solution}
+ \begin{question}
 	Now find all of the points where $f'(x)=0$ or does not exist (critical points), and where $f''(x)=0$ or does not exist (possible inflection points).
 	
 	Which of the following sets is the set of all critical points and possible inflection points of $f$ on the interval $[0,\infty)$?
 	
 	 \begin{multipleChoice}
-     \choice[correct]{$\{1\}$}
-      \choice{$\{1,2\}$}
-      \choice{$\{8,6\}$ }
+     \choice[correct]{$\{-2,0,2\}$}
+      \choice{$\{-2,2\}$}
+      \choice{$\{0\}$ }
+      \choice{$\{-12,12\}$}
       \choice{There are no critical points or possible inflection points}
     \end{multipleChoice}
 
- \end{solution}
+ \end{question}
  
  \textbf{Identify Increasing/Decreasing Behavior and Convaity}
  
- \begin{solution}
- On the interval $(0,1)$ $f$ is
+ \begin{question}
+
+On the interval $(-\infty,-2)$ $f$ is
+ 
+ \begin{multipleChoice}
+     \choice{Decreasing and concave down}
+      \choice{Decreasing and concave up}
+      \choice[correct]{Increasing and concave down}
+      \choice{Increasing and concave up}
+    \end{multipleChoice} 
+    
+    On the interval $(-2,0)$ $f$ is
  
  \begin{multipleChoice}
      \choice[correct]{Decreasing and concave down}
@@ -87,62 +84,96 @@ What is the domain of $f$?
       \choice{Increasing and concave down}
       \choice{Increasing and concave up}
     \end{multipleChoice}
-    
-  On the interval $(1,\infty)$ $f$ is
+
+On the interval $(0,2)$ $f$ is
  
-  \begin{multipleChoice}
-     \choice[correct]{Decreasing and concave up}
-      \choice{Decreasing and concave down}
+ \begin{multipleChoice}
+     \choice{Decreasing and concave down}
+      \choice[correct]{Decreasing and concave up}
       \choice{Increasing and concave down}
       \choice{Increasing and concave up}
     \end{multipleChoice}
-    \end{solution}
+    \end{question}
+    
+    On the interval $(2,\infty)$ $f$ is
+ 
+ \begin{multipleChoice}
+     \choice{Decreasing and concave down}
+      \choice{Decreasing and concave up}
+      \choice{Increasing and concave down}
+      \choice[correct]{Increasing and concave up}
+    \end{multipleChoice}
+    \end{question}
     
  \textbf{Identify extreme values and inflection points}
- 
- Ordinarily, this would be a major step, but in our case, the only critical point is $x=1$, and $f$ is undefined there, so we skip this step.
+	
+	\begin{question}
+		$f$ has a local min at $x=$\answer{2}
+	\end{question} 
+	
+	\begin{question}
+		$f$ has a local max at $x=$\answer{-2}
+	\end{question} 
+	
+	\begin{question}
+		$f$ has an inflection point at $x=$\answer{0}
+	\end{question} 
  
  \textbf{Locate vertical/horizontal asymptotes and determine end behavior}
  
- \begin{solution}
+ \begin{question}
  Which of the following are true?
  
  \begin{multipleChoice}
-     \choice[correct]{$\lim_{x \to 1^-} f(x) = -\infty$, $\lim_{x \to 1^+} f(x) = \infty$, and $\lim_{x \to \infty} f(x) = 0$}
-      \choice{$\lim_{x \to 1^-} f(x) = -\infty$, $\lim_{x \to 1^+} f(x) = \infty$, and $\lim_{x \to \infty} f(x) = \infty$}
-      \choice{$\lim_{x \to 1^-} f(x) = \infty$, $\lim_{x \to 1^+} f(x) = \infty$, and $\lim_{x \to \infty} f(x) = 0$}
-      \choice{$\lim_{x \to 1^-} f(x) = \infty$, $\lim_{x \to 1^+} f(x) = -\infty$, and $\lim_{x \to \infty} f(x) = -\infty$}
+     \choice[correct]{$\lim_{x \to -\infty} f(x) = -\infty$ and $\lim_{x \to \infty} f(x) = \infty$}
+      \choice{$\lim_{x \to -\infty} f(x) = \infty$ and $\lim_{x \to \infty} f(x) = \infty$}
+      \choice{$\lim_{x \to -\infty} f(x) = \infty$ and $\lim_{x \to \infty} f(x) = -\infty$}
+      \choice{$\lim_{x \to -\infty} f(x) = 0$ and $\lim_{x \to \infty} f(x) = 0$}
     \end{multipleChoice}
-    \end{solution}
+    \end{question}
+    
+    
   \textbf{Find the Intercepts}
   
-  In this case, we can see that the only zero of $f$ occurs when $x=0$.  So the function passes through the origin, and this is the only $x$ or $y$ intercept.
+ In order, from smallest value of $x$ to largest value of $x$, 
+ 
+ \begin{question}
+ 	The first zero of $f$ is $x=-sqrt(12)$
+ \end{question}
+ 
+  \begin{question}
+ 	The second zero of $f$ is $x=0$
+ \end{question}
+ 
+  \begin{question}
+ 	The last zero of $f$ is $x=sqrt(12)$
+ \end{question}
+ 
   
   \textbf{Choose an Appropriate Graphing Window and Make a Graph}
   
   Try to graph the function now, using all of the information you have gathered above.  
   
   
-  \begin{solution}
+  \begin{question}
   
   Do you solemnly swear that you tried to graph it on your own?  We will reveal the graph after you say "yes", so that you can compare your work with the correct answer.
-  
+ 
+ \begin{solution} 
   	\begin{multipleChoice}
      \choice[correct]{yes}
       \choice{no}
     \end{multipleChoice}
+\end{solution}
 
-  \end{solution}
-  
-       
 \begin{image}
   \begin{tikzpicture}
     \colorlet{textColor}{black}
     \colorlet{penColor}{blue!50!black}
 	\begin{axis}[
             domain=-5:5,
-            ymax=6,
-            ymin=-6,
+            ymax=20,
+            ymin=-20,
             width=6in,
             %samples=100,
             axis lines =middle, xlabel=$x$, ylabel=$y$,
@@ -150,18 +181,20 @@ What is the domain of $f$?
             every axis x label/.style={at=(current axis.right of origin),anchor=west}
           ]
       
-          \addplot [thick, penColor, smooth,domain=(-5:-1.1)] {x/(x^2-1)};
-          \addplot [thick, penColor, smooth,domain=(-0.9:0.9)] {x/(x^2-1)};
-          \addplot [thick, penColor, smooth,domain=(1.1:5)] {x/(x^2-1)};
-          \addplot [dashed, textColor, smooth] plot coordinates {(1,6) (1,-6)};
-          \addplot [dashed, textColor, smooth] plot coordinates {(-1,6) (-1,-6)};
+          \addplot [thick, penColor, smooth,domain=(-4:4)] {x/(x^2-1)};
+       
         \end{axis}
 \end{tikzpicture}
 \end{image}
+  \end{question}
+  
+       
 
 
+Note that this graph is symmetric about the origin, since the function is odd (check this yourself!)
+
   
-  
+\begin{question}
   Write down at least \textbf{five} questions for this lecture. After
 you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
 \begin{description}
@@ -169,14 +202,10 @@ you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' 
 \item[Level 2] Means you think you know how to do the problem, or will soon learn how to do the problem.
 \item[Level 3] Means you have no idea how to do the problem. 
 \end{description}
-
   \begin{freeResponse}
   \end{freeResponse}
+  \end{question}
   
-  
-  
-  
-\end{question}
 
 
 
