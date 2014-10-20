@@ -13,6 +13,30 @@
 \maketitle
 
 
+\begin{image}
+  \begin{tikzpicture}
+    \colorlet{textColor}{black}
+    \colorlet{penColor}{blue!50!black}
+	\begin{axis}[
+            domain=-5:5,
+            ymax=8,
+            ymin=-8,
+            width=6in,
+            %samples=100,
+            axis lines =middle, xlabel=$x$, ylabel=$y$,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+      
+          \addplot [thick, penColor, smooth,domain=(-5:-1.1)] {x/(x^2-1)};
+          \addplot [thick, penColor, smooth,domain=(-0.9:0.9)] {x/(x^2-1)};
+          \addplot [thick, penColor, smooth,domain=(1.1:5)] {x/(x^2-1)};
+          \addplot [dashed, textColor, smooth] plot coordinates {(1,8) (1,-8)};
+          \addplot [dashed, textColor, smooth] plot coordinates {(-1,8) (-1,-8)};
+        \end{axis}
+\end{tikzpicture}
+\end{image}
+
 This prefecture is one long extended exercise.  We will learn everything we can about the function $f(x) = \frac{x}{x^2-1}$, and use this information to graph $f$.
 \textbf{Do not} use a graphing calculator to help you during this activity.  It will rob you of the whole experience.
 
@@ -164,9 +188,11 @@ What is the domain of $f$?
             every axis x label/.style={at=(current axis.right of origin),anchor=west}
           ]
       
-          \addplot [thick, penColor, smooth,domain=(-5:-1.01)] {x/(x^2-1)};
-          \addplot [thick, penColor, smooth,domain=(-0.99:0.99)] {x/(x^2-1)};
-          \addplot [thick, penColor, smooth,domain=(1.01:5)] {x/(x^2-1)};
+          \addplot [thick, penColor, smooth,domain=(-5:-1.1)] {x/(x^2-1)};
+          \addplot [thick, penColor, smooth,domain=(-0.9:0.9)] {x/(x^2-1)};
+          \addplot [thick, penColor, smooth,domain=(1.1:5)] {x/(x^2-1)};
+          \addplot [dashed, textColor, smooth] plot coordinates {(1,8) (1,-8)};
+          \addplot [dashed, textColor, smooth] plot coordinates {(-1,8) (-1,-8)};
         \end{axis}
 \end{tikzpicture}
 \end{image}
