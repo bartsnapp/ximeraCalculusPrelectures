@@ -7,23 +7,52 @@
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  We can optimization interesting quantities by modeling them as functions and using calculus to maximize or minimize them.
 \end{abstract}
 
 \maketitle
 
-\begin{question}
-  What is the correct answer to this question?
 
-  
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
-  
+An \textbf{optimization problem} is a problem where you need to maximize of minimize some quantity given some constraints.  In this course, all the optimization problems we will consider can be modeled by trying to maximize or minimize a function of one variable.  This can be accomplished using the tools of differential calculus that we have already developed.
+
+Perhaps the most basic optimization problems is this:  among all rectangles of a fixed perimeter, which has the greatest area?
+
+For example, if we are trying to build a rectangle with a perimeter of $12$, we could do so with a $1 \times 5$ rectangle, or a $2 \times 4$ rectangle.  The area of the $2 \times 4$ rectangle is greater.  Let's use calculus to find the largest such rectangle.
+
+\begin{question}
+	If a rectangle has perimeter $12$ and one side is length $x$, then the length of the other side is \answer{6-x}.
 \end{question}
+
+\begin{question}
+	Using the observation in the last question, the area of this rectangle is $A(x) =$\answer{x*(6-x)}
+\end{question}
+
+\begin{question}
+	For the side lengths to be physically relevant, we must have which of the following constraints on $x$?
+	\begin{multipleChoice}
+     		\choice[correct]{$x \in [0,6]$}
+    		\choice{$x \in [0,12]$}
+     		\choice{$x \in [-6,12] $}
+      		\choice{$x \in [-12,6]$}
+  	\end{multipleChoice}
+\end{question}
+
+So to maximize the area of the rectangle, we need to find the maximum value of $A(x)$ on the appropriate interval.  We do that using the derivative!
+
+\begin{question}
+	$A'(x) =$ \answer{6-2x}
+\end{question}
+
+\begin{question}
+	\begin{solution}
+	The only critical point of $A$ is at $x=$\answer{3}
+	\end{solution}
+	
+	Since $A'(x) = 6-2x$ is positive on $[0,3]$ and negative on $[3,6]$, $x=3$ is where the maximum value of $A$ happens.
+	This happens to be when the rectangle is a square!  You might enjoy trying to prove this for a general perimeter $P$.  You might also enjoying trying to prove this without using calculus (hint:  complete the square!)
+\end{question}
+
+
 
 Write down at least \textbf{five} questions for this lecture. After
 you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
