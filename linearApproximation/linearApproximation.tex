@@ -1,5 +1,7 @@
 \documentclass{ximera}
 
+\input{../preamble.tex}
+
 \outcome{What is linear approximation and when can it be used?}
 \outcome{Understand how good an approximation is.}
 \outcome{What is a differential?}
@@ -7,29 +9,74 @@
 \outcome{Find the error of a linear approximation.}
 \outcome{Calculate $\delta y$ and $dy$.}
 
-\title{linear approximation}
+\title{Linear approximation}
 
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  Now we see the derivatives connection to linear approximations. 
 \end{abstract}
-
 \maketitle
 
-\begin{question}
-  What is the correct answer to this question?
+Given a function, a \textit{linear approximation} is a fancy phrase
+for something you already know.
 
-  
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
-  
+\begin{definition}\index{linear approximation}
+If $f(x)$ is a differentiable function at $x=a$, then a \textbf{linear
+  approximation} for $f(x)$ at $x=a$ is given by
+\[
+\l(x) = f'(a)(x-a) +f(a).
+\]
+\end{definition}
+
+
+Let's use a linear approximation of $f(x) =\sqrt[3]{x}$ at $x=64$ to
+approximate $\sqrt[3]{50}$.
+
+\begin{question}
+To start, $\ddx \sqrt[3]{x} = $\answer{3*x^(2/3)}
 \end{question}
 
+Now we need to find a whole number whose cube root is ``easy'' that is
+near $50$.
+
+
+\begin{question}
+What is the closest whole number to $50$ that is a perfect cube?
+\answer{64}
+\end{question}
+
+\begin{question}
+Now we write the formula for the tangent line to the curve at $x=64$.
+
+The formula for the tangent line is $\l(x) = $\answer{x/48 + 8/3}.
+\end{question}
+
+\begin{question}
+  $\l(50) =$\answer{3.71} (round to two decimal places).
+\end{question}
+
+Now check your answer:
+
+\begin{question}
+$(\text{your previous answer})^3$ = \answer{51.06} (round to two
+  decimal places).
+\end{question}
+
+
+
+
+With modern calculators and computing software it may not appear
+necessary to use linear approximations. But in fact they are quite
+useful. In cases requiring an explicit numerical approximation, they
+allow us to get a quick rough estimate which can be used as a
+``reality check'' on a more complex calculation. In some complex
+calculations involving functions, the linear approximation makes an
+otherwise intractable calculation possible, without serious loss of
+accuracy.
+
+
+\begin{question}
 Write down at least \textbf{five} questions for this lecture. After
 you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
 \begin{description}
@@ -37,7 +84,6 @@ you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' 
 \item[Level 2] Means you think you know how to do the problem, or will soon learn how to do the problem.
 \item[Level 3] Means you have no idea how to do the problem. 
 \end{description}
-\begin{question}
   \begin{freeResponse}
   \end{freeResponse}
 \end{question}
