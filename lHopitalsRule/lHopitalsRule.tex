@@ -14,23 +14,61 @@
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+   L'Hopital's rule lets us evaluate some limits using differential calculus  
 \end{abstract}
 
 \maketitle
 
-\begin{question}
-  What is the correct answer to this question?
+\begin{theorem}
+	Let $f$ and $g$ be functions which are differentiable on a neighborhood of $a$, with $g'(a) \neq 0$ in a neighborhood of $a$. 
 
+	If the limit $\displaystyle\lim_{x \to a} \frac{f(x)}{g(x)}$ is of indeterminate form $\frac{0}{0}$ (in other words, in this case, $f(a) = g(a)=0$), then we have
+	
+	$\displaystyle\lim_{x \to a} \frac{f(x)}{g(x)} = \displaystyle\lim_{x \to a} \frac{f'(x)}{g'(x)}$
+\end{theorem}
+
+\begin{question}
+  Does L'Hopital's Rule apply to $\lim_{x \to 2}\frac{x^3-2x-4}{x-2}$?
   
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
+  \begin{solution}
+ \begin{multipleChoice}
+      \choice[correct]{Yes}
+      \choice{No}
+    \end{multipleChoice}
+ \end{solution}
+ 
+ Right! The limit is of indeterminate form $\frac{0}{0}$, both the numerator and denominator of the expression $\frac{x^3-2x-4}{x-2}$ are differentiable everywhere, and the derivative of the denominator is $1$, which is never equal to $0$.
+ 
+ \end{question}
+ 
+ \begin{question}
+ 	\begin{hint}
+		Differentiate the numerator and denominator, then plug in $x=2$
+	\end{hint}
+  	 $\lim_{x \to 2}\frac{x^3-2x-4}{x-2}=$\answer{10}
+  \end{question}
   
-\end{question}
+\begin{question}
+  Does L'Hopital's Rule apply to $\lim_{x \to 0}\frac{x+3}{x+4}$?
+  
+  \begin{solution}
+ \begin{multipleChoice}
+      \choice{Yes}
+      \choice[correct]{No}
+    \end{multipleChoice}
+ \end{solution}
+ 
+ Right! The limit is not of indeterminate form $\frac{0}{0}$, so L'Hopital's rule does not apply.
+ 
+ \end{question}
+ 
+ \begin{question}
+ 	\begin{hint}
+		A rational function is continuous on its domain.
+	\end{hint}
+  	 $\lim_{x \to 0}\frac{x+3}{x+4}=$\answer{3/4}
+  \end{question}  
+  
 
 Write down at least \textbf{five} questions for this lecture. After
 you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
