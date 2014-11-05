@@ -14,22 +14,51 @@
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  $F$ is an antiderivative of $f$ if $F'=f$
 \end{abstract}
 
 \maketitle
 
-\begin{question}
-  What is the correct answer to this question?
+\begin{definition}
+	A function $F$ is called an \textbf{antiderivative} of a function $f$ if $F' = f$.  We write $\int f(x) dx$ for the set of all antiderivatives of $f$.
+\end{definition}
 
+\begin{question}
+	$F(x) = x^2$ is one antiderivative of $f(x) = 2x$, since $F'(x) = f(x)$.  Does $f$ have any other antiderivatives?
+\begin{solution}
+	 \begin{multipleChoice}
+    	  \choice[correct]{Yes}
+     	 \choice{No}
+    	\end{multipleChoice}  
+  \end{solution}
   
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
-  
+  Right!  For example, $F(x) = x^2+1$ also has derivative $F'(x) = 2x$.
+\end{question}
+
+\begin{theorem}
+	If $f$ is differentiable on an interval $[a,b]$, then all of the antiderivatives of $f$ differ by a constant on that interval.  For this reason we will always write $\int f(x) dx  = F(x)+C$, where $F$ is a particular antiderivative of $f$ and $C$ is an arbitrary constant.
+\end{theorem}
+
+\begin{question}
+ 	$\int 4x dx = $ 
+	\begin{expression-answer}
+  function validator(F) {
+    if (F.variables().indexOf('C') == -1) {
+      feedback( 'You should include a $+C$ in your answer.' );
+    }
+    
+    var correctF = MathFunction.parse('2x^2')
+    var dF = F.derivative('x');
+    
+    if (dF.equals(correctF) && !(F.variables().indexOf('C') == -1){
+    	return true;
+	}
+   
+    return false;
+  }
+\end{expression-answer}
+	
+	
 \end{question}
 
 \begin{question}
