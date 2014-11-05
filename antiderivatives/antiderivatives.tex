@@ -45,24 +45,6 @@
  function validator(F) {
    if (F.variables().indexOf('C') == -1) {
      feedback( 'You should include a $+C$ in your answer.' );
-   }
-   
-   var correctF = MathFunction.parse('2x^2')
-   var dF = F.derivative('x');
-   
-   if (dF.equals(correctF) && !(F.variables().indexOf('C') == -1){
-   	return true;
-}
-  
-   return false;
- }
-\end{expression-answer}
-Ah.
-Let me try again.
-\begin{expression-answer}
- function validator(F) {
-   if (F.variables().indexOf('C') == -1) {
-     feedback( 'You should include a $+C$ in your answer.' );
      return false;
    }
    
