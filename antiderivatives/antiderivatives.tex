@@ -40,7 +40,10 @@
 \end{theorem}
 
 \begin{question}
- 	$\int 4x dx = $ 
+	\begin{hint}
+		What function has a derivative equal to $4x$?
+	\end{hint}
+ 	$\displaystyle \int 4x dx = $ 
 	\begin{expression-answer}
  function validator(F) {
    if (F.variables().indexOf('C') == -1) {
@@ -56,6 +59,53 @@
 \end{expression-answer}	
 	
 \end{question}
+
+
+\begin{question}
+	\begin{hint}
+		What function has a derivative equal to $\cos(x)$?
+	\end{hint}
+ 	$\displaystyle \int \cos(x) dx = $ 
+	\begin{expression-answer}
+ function validator(F) {
+   if (F.variables().indexOf('C') == -1) {
+     feedback( 'You should include a $+C$ in your answer.' );
+     return false;
+   }
+   
+   var correctf = MathFunction.parse('cos(x)')
+   var dF = F.derivative('x');
+   
+   return (dF.equals(correctf));
+ }
+\end{expression-answer}	
+	
+\end{question}
+
+\begin{question}
+	\begin{hint}
+		What function has a derivative equal to $5(1+x)^4$?
+	\end{hint}
+	\begin{hint}
+		Try to think about using the chain rule "in reverse".
+	\end{hint}
+ 	$\displaystyle \int \cos(x) dx = $ 
+	\begin{expression-answer}
+ function validator(F) {
+   if (F.variables().indexOf('C') == -1) {
+     feedback( 'You should include a $+C$ in your answer.' );
+     return false;
+   }
+   
+   var correctf = MathFunction.parse('5*(1+x)^4')
+   var dF = F.derivative('x');
+   
+   return (dF.equals(correctf));
+ }
+\end{expression-answer}	
+	
+\end{question}
+
 
 \begin{question}
 Write down at least \textbf{five} questions for this lecture. After
