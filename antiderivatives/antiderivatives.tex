@@ -20,7 +20,7 @@
 \maketitle
 
 \begin{definition}
-	A function $F$ is called an \textbf{antiderivative} of a function $f$ if $F' = f$.  We write $\int f(x) dx$ for the set of all antiderivatives of $f$.
+	A function $F$ is called an \textbf{antiderivative} of a function $f$ if $F' = f$.  We write $\displaystyle \int \! f(x) \, \mathrm{d}x$ for the set of all antiderivatives of $f$.
 \end{definition}
 
 \begin{question}
@@ -36,14 +36,14 @@
 \end{question}
 
 \begin{theorem}
-	If $f$ is differentiable on an interval $[a,b]$, then all of the antiderivatives of $f$ differ by a constant on that interval.  For this reason we will always write $\int f(x) dx  = F(x)+C$, where $F$ is a particular antiderivative of $f$ and $C$ is an arbitrary constant.
+	If $f$ is differentiable on an interval $[a,b]$, then all of the antiderivatives of $f$ differ by a constant on that interval.  For this reason we will always write $\displaystyle \int \! f(x) \, \mathrm{d}x  = F(x)+C$, where $F$ is a particular antiderivative of $f$ and $C$ is an arbitrary constant.
 \end{theorem}
 
 \begin{question}
 	\begin{hint}
 		What function has a derivative equal to $4x$?
 	\end{hint}
- 	$\displaystyle \int 4x dx = $ 
+ 	$\displaystyle \int 4x \, \mathrm{d}x = $ 
 	\begin{expression-answer}
  function validator(F) {
    if (F.variables().indexOf('C') == -1) {
@@ -65,7 +65,7 @@
 	\begin{hint}
 		What function has a derivative equal to $\cos(x)$?
 	\end{hint}
- 	$\displaystyle \int \cos(x) dx = $ 
+ 	$\displaystyle \int \cos(x) \, \mathrm{d}x = $ 
 	\begin{expression-answer}
  function validator(F) {
    if (F.variables().indexOf('C') == -1) {
@@ -89,7 +89,7 @@
 	\begin{hint}
 		Try to think about using the chain rule "in reverse".
 	\end{hint}
- 	$\displaystyle \int 5(1+x)^4 dx = $ 
+ 	$\displaystyle \int 5(1+x)^4 \,  \mathrm{d}x = $ 
 	\begin{expression-answer}
  function validator(F) {
    if (F.variables().indexOf('C') == -1) {
