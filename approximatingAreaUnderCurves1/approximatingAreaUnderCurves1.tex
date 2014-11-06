@@ -26,12 +26,12 @@ We have been studying differential calculus, the basic question of which is "Wha
 
 Our basic approach will be to approximate the area under a curve with a sum of areas of rectangles.
 
-%PICTURE of Reman sum approximating area under curve
+\inputgraphics{riemann0.gif}
 
 \begin{question}
 	Let $f(x) = x^2+1$.  Divide the interval $[0,1]$ into $3$ subintervals of equal width.  Base a rectangle on each subinterval, whose height is given by the function value at the left endpoint.  Then the sum of the areas of these rectangles is a (crude) approximation of the area under $f$ on the interval $[0,1]$.
 
-%PICTURE of this particular Riemann sum
+\inputgraphics{riemann1.gif}
 	
 	The sum of the areas of these rectangles is \answer{ (1+(1+1/9)+(1+4/9)/3)}
 \end{question}
@@ -63,7 +63,7 @@ To write these kind of sums in a more compact notation, we introduce sigma notat
 	\end{hint}
 	Let $f(x) = x^2+1$.  Divide the interval $[0,1]$ into $10$ subintervals of equal width.  Base a rectangle on each subinterval, whose height is given by the function value at the left endpoint.  Then the sum of the areas of these rectangles is a (crude) approximation of the area under $f$ on the interval $[0,1]$.
 	
-%PICTURE of this particular Riemann sum.
+\inputgraphics{riemann2.gif}
 	
 	If we write the sum of the areas of these rectangles in sigma notation, in the form $\Sum_{k=0}^{k=9} C(k)$, then $C(k) = $\answer{(1+k^2/100)/10}
 \end{question}
