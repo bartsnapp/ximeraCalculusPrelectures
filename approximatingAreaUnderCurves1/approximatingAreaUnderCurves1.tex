@@ -24,14 +24,14 @@
 
 We have been studying differential calculus, the basic question of
 which is ``What is the slope of the tangent line to a function at a
-point?.''  We now turn to \textbf{integral} calculus, the basic
+point?.''  
+
+We now turn to \textbf{integral} calculus, the basic
 question of which is "What is the (signed) area bounded by the graph
 of a function?"
 
 Our basic approach will be to approximate the area under a curve with
 a sum of areas of rectangles.
-
-%PICTURE of Reman sum approximating area under curve
 
 \begin{question}
   Let $f(x) = x^2+1$.  Divide the interval $[0,1]$ into $3$
@@ -40,10 +40,12 @@ a sum of areas of rectangles.
   Then the sum of the areas of these rectangles is a (crude)
   approximation of the area under $f$ on the interval $[0,1]$.
 
-%PICTURE of this particular Riemann sum
+\begin{image}
+\includegraphics{riemann1.png}
+\end{image}
 	
   The sum of the areas of these rectangles is \answer{
-    (1+(1+1/9)+(1+4/9)/3)}
+    (1+(1+1/9)+(1+4/9))/3}
 \end{question}
 
 To write these kind of sums in a more compact notation, we introduce
@@ -51,21 +53,21 @@ sigma notation:
 
 \begin{definition}
   Let $C(k)$ be a function which accepts integer inputs $k$.  Then if
-  $a < b$, $\sum_{k=a}^{k=b} C(k)$ is defined to be the sum
+  $a < b$, $\displaystyle\sum_{k=a}^{k=b} C(k)$ is defined to be the sum
   $C(a)+C(a+1)+C(a+2)+\dots +C(b-1)+C(b)$.
 \end{definition}
 
 \begin{example}
-  $\sum_{k=2}^{k=5} k^2 = 2^2+3^2+4^2+5^2$
+  $\displaystyle\sum_{k=2}^{k=5} k^2 = 2^2+3^2+4^2+5^2$
 \end{example}
 
 \begin{question}
-	$\Sum_{k=1}^{k=3} k = $\answer{6}
+	$\displaystyle\sum_{k=1}^{k=3} k = $\answer{6}
 \end{question}
 
 \begin{question}
   If we want to write the sum $(1+2(0))+(1+2(1))+(1+2(2))+(1+2(3))$ in
-  sigma notation, in the form $\Sum_{k=0}^{k=3} C(k)$, then
+  sigma notation, in the form $\displaystyle\sum_{k=0}^{k=3} C(k)$, then
   $C(k)=$\answer{1+2k}
 \end{question}
 
@@ -78,9 +80,11 @@ sigma notation:
   \end{hint}
   Let $f(x) = x^2+1$.  Divide the interval $[0,1]$ into $10$ subintervals of equal width.  Base a rectangle on each subinterval, whose height is given by the function value at the left endpoint.  Then the sum of the areas of these rectangles is a (crude) approximation of the area under $f$ on the interval $[0,1]$.
 	
-  %PICTURE of this particular Riemann sum.
+\begin{image}
+\includegraphics{riemann2.png}
+\end{image}
 	
-  If we write the sum of the areas of these rectangles in sigma notation, in the form $\Sum_{k=0}^{k=9} C(k)$, then $C(k) = $\answer{(1+k^2/100)/10}
+  If we write the sum of the areas of these rectangles in sigma notation, in the form $\displaystyle \sum_{k=0}^{k=9} C(k)$, then $C(k) = $\answer{(1+k^2/100)/10}
 \end{question}
 
 
