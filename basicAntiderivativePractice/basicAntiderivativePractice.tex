@@ -1,0 +1,2021 @@
+\documentclass{ximera}
+
+\renewcommand{\d}{\, d}
+
+\title{Basic antiderivative practice}
+\begin{document}
+\begin{abstract}
+Do some of these.
+\end{abstract}
+\maketitle
+
+Here we have some basic antiderivative problems. By no means is this a
+comprehensive list, but doing at least a few of these problems is a
+good place to start.
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{12 (-20 u-10)}{\left(-10 u^2-10 u+9\right)^3}\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(-12*(-10 - 20*u))/Power(9 - 10*u - 10*Power(u,2),3)');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(7 (16 x-4) \sin \left(8 x^2-4 x+5\right)\right)\d x
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('7*(-4 + 16*x)*Sin(5 - 4*x + 8*Power(x,2))');
+      var dF = F.derivative('x');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(32 (-8 t-4) \left(-4 t^2-4 t-4\right)^3\right)\d t
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('32*(-4 - 8*t)*Power(-4 - 4*t - 4*Power(t,2),3)');
+      var dF = F.derivative('t');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{9}{(9 p+10)^{2/3}}\right)\d p
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('9/Power(10 + 9*p,0.6666666666666666)');
+      var dF = F.derivative('p');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{2 (5-8 x)}{\sqrt{-4 x^2+5 x-2}}\right)\d x
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(2*(5 - 8*x))/Sqrt(-2 + 5*x - 4*Power(x,2))');
+      var dF = F.derivative('x');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{24}{(10-4 z)^2+1}\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('24/(1 + Power(10 - 4*z,2))');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-7 (-18 v-7) \tan \left(-9 v^2-7 v+7\right) \sec \left(-9 v^2-7 v+7\right)\right)\d v
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-7*(-7 - 18*v)*Sec(7 - 7*v - 9*Power(v,2))*Tan(7 - 7*v - 9*Power(v,2))');
+      var dF = F.derivative('v');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(5 (10-16 z) \sec ^2\left(-8 z^2+10 z+3\right)\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('5*(10 - 16*z)*Power(Sec(3 + 10*z - 8*Power(z,2)),2)');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{6 (6 p+9)}{\left(3 p^2+9 p+6\right)^2+1}\right)\d p
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(6*(9 + 6*p))/(1 + Power(6 + 9*p + 3*Power(p,2),2))');
+      var dF = F.derivative('p');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{8 (-18 w-4)}{-9 w^2-4 w-7}\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(8*(-4 - 18*w))/(-7 - 4*w - 9*Power(w,2))');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{6 w-8}{3 w^2-8 w+6}\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(-8 + 6*w)/(6 - 8*w + 3*Power(w,2))');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{30}{(9-9 y)^{2/3}}\right)\d y
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('30/Power(9 - 9*y,0.6666666666666666)');
+      var dF = F.derivative('y');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-(-14 q-5) \cos \left(-7 q^2-5 q+10\right)\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-((-5 - 14*q)*Cos(10 - 5*q - 7*Power(q,2)))');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-320 (10 q-1)^3\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-320*Power(-1 + 10*q,3)');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-7 (16 u+8) \cot \left(8 u^2+8 u+6\right) \csc \left(8 u^2+8 u+6\right)\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-7*(8 + 16*u)*Cot(6 + 8*u + 8*Power(u,2))*Csc(6 + 8*u + 8*Power(u,2))');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-25 (18 q+5) \left(9 q^2+5 q+10\right)^4\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-25*(5 + 18*q)*Power(10 + 5*q + 9*Power(q,2),4)');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{21}{(4-7 x)^{2/3}}\right)\d x
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('21/Power(4 - 7*x,0.6666666666666666)');
+      var dF = F.derivative('x');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{6 (9-8 w)}{\left(-4 w^2+9 w+1\right)^3}\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(6*(9 - 8*w))/Power(1 + 9*w - 4*Power(w,2),3)');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-4 (-18 p-7) \cos \left(-9 p^2-7 p+1\right)\right)\d p
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-4*(-7 - 18*p)*Cos(1 - 7*p - 9*Power(p,2))');
+      var dF = F.derivative('p');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{20 (14 p+7)}{\left(7 p^2+7 p-6\right)^6}\right)\d p
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(20*(7 + 14*p))/Power(-6 + 7*p + 7*Power(p,2),6)');
+      var dF = F.derivative('p');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{8}{(8 y-2)^{4/5}}\right)\d y
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('8/Power(-2 + 8*y,0.8)');
+      var dF = F.derivative('y');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(10 (16 u-4) \cos \left(8 u^2-4 u+3\right)\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('10*(-4 + 16*u)*Cos(3 - 4*u + 8*Power(u,2))');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{12 (-12 u-1)}{\left(-6 u^2-u-3\right)^5}\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(12*(-1 - 12*u))/Power(-3 - u - 6*Power(u,2),5)');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-14 (-7 z-6)\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-14*(-6 - 7*z)');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-2 (20 x+1) \tan \left(10 x^2+x+3\right) \sec \left(10 x^2+x+3\right)\right)\d x
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-2*(1 + 20*x)*Sec(3 + x + 10*Power(x,2))*Tan(3 + x + 10*Power(x,2))');
+      var dF = F.derivative('x');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(70 \cot (10 x+8) \csc (10 x+8)\right)\d x
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('70*Cot(8 + 10*x)*Csc(8 + 10*x)');
+      var dF = F.derivative('x');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-9 (20 w+8) \cos \left(10 w^2+8 w+7\right)\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-9*(8 + 20*w)*Cos(7 + 8*w + 10*Power(w,2))');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{2}{\sqrt{-z-1}}\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-2/Sqrt(-1 - z)');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{30}{\sqrt{1-(6 v-7)^2}}\right)\d v
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-30/Sqrt(1 - Power(-7 + 6*v,2))');
+      var dF = F.derivative('v');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-25 (20 w+1) \left(10 w^2+w-2\right)^4\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-25*(1 + 20*w)*Power(-2 + w + 10*Power(w,2),4)');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{9}{\sqrt{-6 v-5}}\right)\d v
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-9/Sqrt(-5 - 6*v)');
+      var dF = F.derivative('v');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{2}{(-10 q-8)^{4/5}}\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('2/Power(-8 - 10*q,0.8)');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(36 e^{-4 u-1}\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('36*Power(E,-1 - 4*u)');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-10 \cos (5 v+2)\right)\d v
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-10*Cos(2 + 5*v)');
+      var dF = F.derivative('v');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(60 (10 x-10)\right)\d x
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('60*(-10 + 10*x)');
+      var dF = F.derivative('x');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{16}{(1-8 t)^3}\right)\d t
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('16/Power(1 - 8*t,3)');
+      var dF = F.derivative('t');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{4 (12 w-8)}{\sqrt{1-\left(6 w^2-8 w-5\right)^2}}\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(4*(-8 + 12*w))/Sqrt(1 - Power(-5 - 8*w + 6*Power(w,2),2))');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{7 (14 u+6)}{\left(7 u^2+6 u+2\right)^2}\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(-7*(6 + 14*u))/Power(2 + 6*u + 7*Power(u,2),2)');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-20 \csc ^2(4 w+1)\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-20*Power(Csc(1 + 4*w),2)');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{36}{(3 t+1)^4}\right)\d t
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('36/Power(1 + 3*t,4)');
+      var dF = F.derivative('t');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-24 (4 q+9) \left(2 q^2+9 q+3\right)^3\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-24*(9 + 4*q)*Power(3 + 9*q + 2*Power(q,2),3)');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{3 (8 v-7)}{4 \left(4 v^2-7 v-7\right)^{3/4}}\right)\d v
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(-3*(-7 + 8*v))/(4.*Power(-7 - 7*v + 4*Power(v,2),0.75))');
+      var dF = F.derivative('v');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-80 \cos (3-10 z)\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-80*Cos(3 - 10*z)');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{2 (-14 v-3)}{\left(-7 v^2-3 v+7\right)^2}\right)\d v
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(2*(-3 - 14*v))/Power(7 - 3*v - 7*Power(v,2),2)');
+      var dF = F.derivative('v');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{300}{(10 y+1)^4}\right)\d y
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-300/Power(1 + 10*y,4)');
+      var dF = F.derivative('y');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{8}{5 (8-4 y)^{4/5}}\right)\d y
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-8/(5.*Power(8 - 4*y,0.8))');
+      var dF = F.derivative('y');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{36}{\sqrt{1-(6 v+8)^2}}\right)\d v
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-36/Sqrt(1 - Power(8 + 6*v,2))');
+      var dF = F.derivative('v');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{80}{(10-8 q)^2+1}\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('80/(1 + Power(10 - 8*q,2))');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{24}{(3 q+8)^2+1}\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-24/(1 + Power(8 + 3*q,2))');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{3 (-2 q-9)}{\sqrt{-q^2-9 q-4}}\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(-3*(-9 - 2*q))/Sqrt(-4 - 9*q - Power(q,2))');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{10 t+2}{2 \sqrt{5 t^2+2 t-3}}\right)\d t
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(2 + 10*t)/(2.*Sqrt(-3 + 2*t + 5*Power(t,2)))');
+      var dF = F.derivative('t');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(8 \csc ^2(2 w+2)\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('8*Power(Csc(2 + 2*w),2)');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-e^{4 t^2+t-4} (8 t+1)\right)\d t
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-(Power(E,-4 + t + 4*Power(t,2))*(1 + 8*t))');
+      var dF = F.derivative('t');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{6}{(q+9)^2+1}\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-6/(1 + Power(9 + q,2))');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{21}{3 z-1}\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-21/(-1 + 3*z)');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(24 \cot (3 x+10) \csc (3 x+10)\right)\d x
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('24*Cot(10 + 3*x)*Csc(10 + 3*x)');
+      var dF = F.derivative('x');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-60 (-3 t-1)\right)\d t
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-60*(-1 - 3*t)');
+      var dF = F.derivative('t');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(72 \tan (4-8 u) \sec (4-8 u)\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('72*Sec(4 - 8*u)*Tan(4 - 8*u)');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{63}{\sqrt{1-(7 u+8)^2}}\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('63/Sqrt(1 - Power(8 + 7*u,2))');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{12}{(6 u+9)^{3/4}}\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-12/Power(9 + 6*u,0.75)');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{90}{\sqrt{1-(4-10 t)^2}}\right)\d t
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-90/Sqrt(1 - Power(4 - 10*t,2))');
+      var dF = F.derivative('t');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{24 (-16 t-6)}{\left(-8 t^2-6 t+10\right)^5}\right)\d t
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(24*(-6 - 16*t))/Power(10 - 6*t - 8*Power(t,2),5)');
+      var dF = F.derivative('t');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{4-10 z}{\sqrt{1-\left(-5 z^2+4 z+4\right)^2}}\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-((4 - 10*z)/Sqrt(1 - Power(4 + 4*z - 5*Power(z,2),2)))');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-6 (3-10 w) \cos \left(-5 w^2+3 w+7\right)\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-6*(3 - 10*w)*Cos(7 + 3*w - 5*Power(w,2))');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(70 e^{7-10 z}\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('70*Power(E,7 - 10*z)');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(42 \tan (2-7 y) \sec (2-7 y)\right)\d y
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('42*Sec(2 - 7*y)*Tan(2 - 7*y)');
+      var dF = F.derivative('y');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{4 (-2 y-4)}{\sqrt{1-\left(-y^2-4 y+7\right)^2}}\right)\d y
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(-4*(-4 - 2*y))/Sqrt(1 - Power(7 - 4*y - Power(y,2),2))');
+      var dF = F.derivative('y');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{5 (10-2 w)}{\left(-w^2+10 w+2\right)^2+1}\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(-5*(10 - 2*w))/(1 + Power(2 + 10*w - Power(w,2),2))');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(210 (7 v+5)^4\right)\d v
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('210*Power(5 + 7*v,4)');
+      var dF = F.derivative('v');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{8-16 t}{3 \left(-8 t^2+8 t+3\right)^{2/3}}\right)\d t
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(8 - 16*t)/(3.*Power(3 + 8*t - 8*Power(t,2),0.6666666666666666))');
+      var dF = F.derivative('t');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{10}{(5 x+8)^{4/5}}\right)\d x
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('10/Power(8 + 5*x,0.8)');
+      var dF = F.derivative('x');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(4 (3-6 q) \cos \left(-3 q^2+3 q+3\right)\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('4*(3 - 6*q)*Cos(3 + 3*q - 3*Power(q,2))');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-180 (9 z-6)^3\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-180*Power(-6 + 9*z,3)');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{24}{(8 w+8)^2+1}\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-24/(1 + Power(8 + 8*w,2))');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{9 (1-18 q)}{\left(-9 q^2+q+10\right)^2+1}\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(-9*(1 - 18*q))/(1 + Power(10 + q - 9*Power(q,2),2))');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{196}{(7 z-8)^5}\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('196/Power(-8 + 7*z,5)');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{16 p+10}{\sqrt{1-\left(8 p^2+10 p+1\right)^2}}\right)\d p
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-((10 + 16*p)/Sqrt(1 - Power(1 + 10*p + 8*Power(p,2),2)))');
+      var dF = F.derivative('p');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-125 (-5 x-6)^4\right)\d x
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-125*Power(-6 - 5*x,4)');
+      var dF = F.derivative('x');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{3}{(3 u+1)^2+1}\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-3/(1 + Power(1 + 3*u,2))');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{30 (8 q+4)}{\left(4 q^2+4 q-4\right)^6}\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(-30*(4 + 8*q))/Power(-4 + 4*q + 4*Power(q,2),6)');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-10 (10 x+10) \sec ^2\left(5 x^2+10 x+10\right)\right)\d x
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-10*(10 + 10*x)*Power(Sec(10 + 10*x + 5*Power(x,2)),2)');
+      var dF = F.derivative('x');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{15}{(10-5 z)^{2/3}}\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('15/Power(10 - 5*z,0.6666666666666666)');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(14 (2 x+10) \left(x^2+10 x-7\right)\right)\d x
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('14*(10 + 2*x)*(-7 + 10*x + Power(x,2))');
+      var dF = F.derivative('x');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-18 (2 u+5) \left(u^2+5 u-3\right)\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-18*(5 + 2*u)*(-3 + 5*u + Power(u,2))');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(9 \sec ^2(10-w)\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('9*Power(Sec(10 - w),2)');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{35}{(7 q+3)^2+1}\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-35/(1 + Power(3 + 7*q,2))');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(72 \tan (7-8 z) \sec (7-8 z)\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('72*Sec(7 - 8*z)*Tan(7 - 8*z)');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{120}{(-8 w-7)^4}\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-120/Power(-7 - 8*w,4)');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{20}{(q-1)^6}\right)\d q
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('20/Power(-1 + q,6)');
+      var dF = F.derivative('q');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{196}{(9-7 w)^5}\right)\d w
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('196/Power(9 - 7*w,5)');
+      var dF = F.derivative('w');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(8 (2 y+2) \sin \left(y^2+2 y+10\right)\right)\d y
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('8*(2 + 2*y)*Sin(10 + 2*y + Power(y,2))');
+      var dF = F.derivative('y');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-\frac{27 (2-10 u)}{\left(-5 u^2+2 u+3\right)^4}\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(-27*(2 - 10*u))/Power(3 + 2*u - 5*Power(u,2),4)');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-4 (14 z-4) \sin \left(7 z^2-4 z+5\right)\right)\d z
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-4*(-4 + 14*z)*Sin(5 - 4*z + 7*Power(z,2))');
+      var dF = F.derivative('z');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{18}{(4-9 y)^{2/3}}\right)\d y
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('18/Power(4 - 9*y,0.6666666666666666)');
+      var dF = F.derivative('y');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{45 (12 v+10)}{\left(6 v^2+10 v-5\right)^6}\right)\d v
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(45*(10 + 12*v))/Power(-5 + 10*v + 6*Power(v,2),6)');
+      var dF = F.derivative('v');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{5 (-10 v-8)}{2 \left(-5 v^2-8 v+9\right)^{3/4}}\right)\d v
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(5*(-8 - 10*v))/(2.*Power(9 - 8*v - 5*Power(v,2),0.75))');
+      var dF = F.derivative('v');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(8 (10 p+4) \cot \left(5 p^2+4 p+6\right) \csc \left(5 p^2+4 p+6\right)\right)\d p
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('8*(4 + 10*p)*Cot(6 + 4*p + 5*Power(p,2))*Csc(6 + 4*p + 5*Power(p,2))');
+      var dF = F.derivative('p');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(\frac{4 (12 u-1)}{\left(6 u^2-u-3\right)^5}\right)\d u
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('(4*(-1 + 12*u))/Power(-3 - u + 6*Power(u,2),5)');
+      var dF = F.derivative('u');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(-20 \sec ^2(6-10 x)\right)\d x
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('-20*Power(Sec(6 - 10*x),2)');
+      var dF = F.derivative('x');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute: 
+\[
+\int \left(36 (-9 y-4)\right)\d y
+\]
+\begin{expressionAnswer}
+     function validator(F) {
+      if (F.variables().indexOf('C') == -1) {
+        feedback( 'You should include a $+C$ in your answer.' );
+        return false;
+      };      
+      var correctf = MathFunction.parse('36*(-4 - 9*y)');
+      var dF = F.derivative('y');
+      return (dF.equals(correctf));
+    }
+\end{expressionAnswer}
+\end{exercise}
+
+
+
+
+
+
+\end{document}
