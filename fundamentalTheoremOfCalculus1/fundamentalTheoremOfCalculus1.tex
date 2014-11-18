@@ -1,5 +1,7 @@
 \documentclass{ximera}
 
+\input{../preamble.tex}
+
 \outcome{What is an accumulation function?}
 \outcome{How does the derivative of the accumulation function compare to the original function?}
 \outcome{How is the area under the curve related to the antiderivative?}
@@ -8,28 +10,73 @@
 \outcome{Take derivatives of accumulation functions using the 1st Fundamental Theorem of Calculus.}
 \outcome{Evaluate definite integrals using the 2nd Fundamental Theorem of Calculus.}
 
-\title{fundamental theorem of calculus1}
+\title{fundamental theorem of calculus}
 
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  The fundamental theorems of calculus connect differential and integral calculus.
 \end{abstract}
 
 \maketitle
 
-\begin{question}
-  What is the correct answer to this question?
+\begin{theorem}[First Fundamental Theorem of Calculus]
+If $f$ is continuous on the interval $[a,b]$, then the function $A(x) = \displaystyle \int_a^x f(t)dt$ satisfies $A'(x) = f(x)$.
 
-  
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
-  
+In other words, $f(x) = \frac{d}{dx} \displaystyle \int_a^x f(t) \d t$.
+\end{theorem}
+
+Rephrasing this in English, we could say "The integral valued function $A$ is an antiderivative of $f$"
+
+
+\begin{question}
+	Let $F(x) = \int_1^x t^2 \d t$.  Then $F'(2)=$ \answer{4}
 \end{question}
+
+\begin{question}
+	\begin{hint}
+		If we let $A(x) = \int_1^x f(t) \d t$, then we are trying to approximate $A(2.1)$.  We know $A(2)=3$, and by the fundamental theorem, we know that $A'(2) = 4$.  So we can use the linear approximation to $A$ at $x=2$ to approximate $A(2.1)$.
+	\end{hint}
+	If $\int_1^2 f(t) \d t = 3$ and $f(2) = 4$, then $\int_1^{2.1} f(t) \d t $ is approximately \answer{3.4}.   
+\end{question}
+
+\begin{question}
+\begin{hint}
+	Use geometry!
+\end{hint}
+Let's check the fundamental theorem for a particular example function.
+
+Let $f(t) = t$.  Then $A(x) = \int_0^x f(t) \d t=$\answer{x^2/2}
+\end{question}
+
+\begin{question}
+	\begin{solution}
+	 So differentiating this expression $A'(x) =$\answer{x}
+	 \end{solution}
+Awesome!  We confirmed the fundamental theorem of calculus, since $A'(x) = f(x)$ in this case.
+ 
+\end{question}
+
+
+
+\begin{theorem}[Second Fundamental Theorem of Calculus]
+	If $f$ is continuous on $[a,b]$, and $F$ is any antiderivative of $f$, then $\int_a^b f(t) \d t = F(b) - F(a)$.
+\end{theorem}
+
+This theorem is a \textbf{really big deal}.  It means that instead of laboriously calculating definite integrals using Riemann Sums, we can evaluate them quickly and efficiently as long as we can find an antiderivative of the integrand.
+
+\begin{question}
+	\begin{hint}
+		What is an antiderivative of $x^2$?  Evaluate this antiderivative at the two end points, and report the difference.
+	\end{hint}
+	 $\int_1^2 x^2 \d x =$\answer{7/3}
+\end{question}
+
+\begin{question}
+	$\int_4^5 \cos(x)=$\answer{sin(5) - sin(4)}
+\end{question}
+
+
 
 Write down at least \textbf{five} questions for this lecture. After
 you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
