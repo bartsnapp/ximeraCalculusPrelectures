@@ -12,23 +12,52 @@
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+	Integrals let us think about averages
 \end{abstract}
 
 \maketitle
 
-\begin{question}
-  What is the correct answer to this question?
+\begin{definition}
+	The average value of an integrable function $f$ on an interval $[a,b]$ is defined to be $\frac{1}{b-a} \displaystyle\int_a^b f(x) \d x$
+\end{definition}
 
-  
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
-  
+This definition makes sense, since 
+
+$\begin{align*}
+\frac{1}{b-a} \displaystyle\int_a^b f(x) \d x &= \lim_{n \to \infty} \frac{1}{b-a} \sum_1^n f(a+k \frac{b-a}{n})\frac{b-a}{n}\\
+&= \lim_{n \to \infty} \frac{\sum_1^n f(a+k \frac{b-a}{n})}{n}\\
+\end{align*}$
+
+$\frac{\sum_1^n f(a+k \frac{b-a}{n})}{n}$ expresses the average of the values of $f$ at the equally spaced point $a + \frac{b-a}{n}, a+2\frac{b-a}{n}, ..., b$, so it is reasonable to call the limit of this sequence the "average value" of the function over the interval.
+
+\begin{question}
+	The average value of $x$ on the interval $[2,4]$ is \answer{3}
 \end{question}
+
+The answer to the last question probably agrees with your intuition about averages, which is a good thing.
+
+Let's look at two examples which should give you some reasons to think through this definition carefully.
+
+Both examples attempt to model the question "What is the average $y$ coordinate of a point on the top half of the unit circle?".
+
+\begin{question}
+	
+	One way to measure the "average" $y$ coordinate of a point on the upper half of the unit circle is by looking at the function $f(x) = \sqrt{1-x^2}$, which takes a point $x$ in the interval $[-1,1]$ and returns the $y$-coordinate of that point.
+	\begin{hint}
+		Use geometry to evaluate the relevant definite integral.
+	\end{hint}
+	
+	The average value of this function on the interval $[-1,1]$ is \answer{pi/4}
+\end{question}
+
+\begin{question}
+	Another way to measure the "average" $y$ coordinate of a point on the upper half of the unit circle is by looking at the function $f(\theta) = \sin(\theta) $, which takes a point $\theta$ in the interval $[0,\pi]$ and returns the $y$-coordinate of that point, aka $\sin(\theta)$.
+	
+	The average value of this function on the interval $[0,\pi]$ is \answer{2/pi}
+
+\end{question}
+
+The last two questions should show that some care must be taken when thinking about the average value of a continuous quantity.  While finite averages make sense given just the "list of numbers" to be averaged, continuous averages need the extra data of "what weight is being given to the different numbers".  This is a topic worthy of considerable further thought.
 
 Write down at least \textbf{five} questions for this lecture. After
 you have your questions, label them as ``Level 1,'' ``Level 2,'' or ``Level 3'' where:
