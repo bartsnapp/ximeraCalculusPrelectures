@@ -34,9 +34,9 @@ We now introduce some convenient notation to make using the chain rule somewhat 
 Given the integrand $f'(g(x))g'(x)dx$, we make the ``variable substitution'' $ u = g(x)$, which induces an equality of differentials $du = g'(x)dx$.  So we write
 
 $\begin{align*}
-	\displaystyle \int f'(g(x))g'(x) dx &= \displaystyle \int f'(u) du \text{ by variable subsitution $u=g(x)$}\\
+	\displaystyle \int f'(g(x))g'(x) dx &= \displaystyle \int f'(u) du \text{ by variable subsitution \(u=g(x)\)}\\
 	&=f(u)+C \text{by definition of the antiderivative}\\
-	&=f(g(x)) +C \text{ substituting $u=g(x)$ back}
+	&=f(g(x)) +C \text{ substituting \(u=g(x)\) back}
 \end{align*}$
 
 As you can see, this is just extra notation, but the conclusion is identical to the theorem above.  At the level of this course, this is just convenient notation, but later on you might learn that this bare notation can be given new life through the concept of a \href{differential form}{http://en.wikipedia.org/wiki/Differential_form}.
@@ -45,9 +45,9 @@ As you can see, this is just extra notation, but the conclusion is identical to 
 If we want to evaluate $\displaystyle \int \cos(x)(1+\sin(x))^5 dx$, we can make the variable substation $u = 1+\sin(x)$.  Then $du=\cos(x)dx$, so
 
 $\begin{align*}
-	\displaystyle \int f\cos(x)(1+\sin(x))^5 dx &= \displaystyle \int u^5 du \text{ by variable subsitution $u=1+\sin(x)$}\\
+	\displaystyle \int f\cos(x)(1+\sin(x))^5 dx &= \displaystyle \int u^5 du \text{ by variable subsitution \(u=1+\sin(x)\)}\\
 	&=\frac{1}{6}u^6+C
-	&=\frac{1}{6}(1+\sin(x))^6 +C \text{ substituting $u=1+\sin(x)$ back}
+	&=\frac{1}{6}(1+\sin(x))^6 +C \text{ substituting \(u=1+\sin(x)\) back}
 \end{align*}$
 
 \end{example}
