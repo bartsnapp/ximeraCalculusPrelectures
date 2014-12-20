@@ -11,22 +11,53 @@
 \begin{document}
 
 \begin{abstract}
-  The abstract should be a one sentence summary that states the main point of the activity.
+  Variable substation is the chain rule in reverse.
 \end{abstract}
 
 \maketitle
 
-\begin{question}
-  What is the correct answer to this question?
 
-  
-    \begin{multipleChoice}
-      \choice[correct]{Correct answer}
-      \choice{First Distractor}
-      \choice{Second Distractor}
-      \choice{Third Distractor}
-    \end{multipleChoice}  
-  
+Recall that the chain rule says that $\frac{d}{dx} f(g(x)) = f'(g(x))g'(x)$.  We can state this in reverse to get a new antidifferentiation rule called "variable subsitution":
+
+\begin{theorem}[Variable Substitution]
+If $f$ and $g$ are differentiable functions on an interval $I$, then we have
+
+$\displaystyle\int f'(g(x))g'(x)dx = f(g(x))+C$
+\end{theorem}
+
+\begin{question}
+	$\int 2x\cos(x^2) dx=$\answer{\cos(x^2)}
+\end{question}
+
+We now introduce some convenient notation to make using the chain rule somewhat more systematic.
+
+Given the integrand $f'(g(x))g'(x)dx$, we make the ``variable substitution'' $ u = g(x)$, which induces an equality of differentials $du = g'(x)dx$.  So we write
+
+$\begin{align*}
+	\displaystyle \int f'(g(x))g'(x) dx &= \displaystyle \int f'(u) du \text{ by variable subsitution \(u=g(x)\)}\\
+	&=f(u)+C \text{ by definition of the antiderivative}\\
+	&=f(g(x)) +C \text{ substituting \(u=g(x)\) back}
+\end{align*}$
+
+As you can see, this is just extra notation, but the conclusion is identical to the theorem above.  At the level of this course, this is just convenient notation, but later on you might learn that this bare notation can be given new life through the concept of a \href{http://en.wikipedia.org/wiki/Differential_form}{differential form}.
+
+\begin{example}
+If we want to evaluate $\displaystyle \int \cos(x)(1+\sin(x))^5 dx$, we can make the variable substation $u = 1+\sin(x)$.  Then $du=\cos(x)dx$, so
+
+$\begin{align*}
+	\displaystyle \int f\cos(x)(1+\sin(x))^5 dx &= \displaystyle \int u^5 du \text{ by variable subsitution \(u=1+\sin(x)\)}\\
+	&=\frac{1}{6}u^6+C\\
+	&=\frac{1}{6}(1+\sin(x))^6 +C \text{ substituting \(u=1+\sin(x)\) back}
+\end{align*}$
+
+\end{example}
+
+\begin{question}
+	\begin{hint}
+		Try making the variable substitution $u = 2+x^3$
+	\end{hint}
+	
+	$\displaystyle \int \frac{x^2}{2+x^3} dx=$\answer{log(2+x^3)/3}
 \end{question}
 
 Write down at least \textbf{five} questions for this lecture. After
